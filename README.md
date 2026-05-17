@@ -54,7 +54,7 @@ R : Environ 3 mois après l'inscription — 60 jours de solde maintenu, puis la 
 ## 📋 Étapes pour obtenir la prime de 50 $
 
 1. Aller sur [tangerine.ca](https://www.tangerine.ca)
-2. Cliquer sur **« Ouvrir un compte »**
+2. Cliquer sur **« Devenez client »**
 3. Entrer la Clé Orange **`14130944S1`** à la **première étape** du formulaire
 4. Choisir un compte-chèques ou un compte d'épargne
 5. Compléter le profil et confirmer l'inscription
@@ -76,7 +76,7 @@ R : Environ 3 mois après l'inscription — 60 jours de solde maintenu, puis la 
 
 ---
 
-## 🔗 Lien direct d'inscription
+## 🔗 Lien direct d'inscription : doit inscrire la Clé Orange 14130944S1
 
 [👉 Ouvrir un compte Tangerine avec la Clé Orange 14130944S1](https://www.tangerine.ca/app/#/visitor-enroll/instructions?locale=fr_CA)
 
