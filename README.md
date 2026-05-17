@@ -78,7 +78,7 @@ R : Environ 3 mois après l'inscription — 60 jours de solde maintenu, puis la 
 
 ## 🔗 Lien direct d'inscription
 
-[👉 Ouvrir un compte Tangerine avec la Clé Orange 14130944S1](https://www.tangerine.ca/fr/ouvrir-un-compte)
+[👉 Ouvrir un compte Tangerine avec la Clé Orange 14130944S1](https://www.tangerine.ca/app/#/visitor-enroll/instructions?locale=fr_CA)
 
 ---
 
@@ -95,7 +95,7 @@ R : Environ 3 mois après l'inscription — 60 jours de solde maintenu, puis la 
 
 > ⚠️ *La Clé Orange ne peut pas être ajoutée après la création du compte — à saisir à la première étape uniquement.*
 
-> 📌 *Cette offre est soumise aux [conditions générales de Tangerine](https://www.tangerine.ca/fr/offres/parrainage). La prime ne peut pas être combinée avec d'autres offres promotionnelles en cours.*
+> 📌 *Cette offre est soumise aux [conditions générales de Tangerine](https://www.tangerine.ca/fr/offres/refer-a-friend). La prime ne peut pas être combinée avec d'autres offres promotionnelles en cours.*
 
 ---
 
