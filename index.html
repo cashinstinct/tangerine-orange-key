@@ -8,7 +8,8 @@
   <meta name="description" content="Utilisez la Clé Orange 14130944S1 lors de votre inscription chez Tangerine pour obtenir une prime de 50 $ CAD. Code valide en 2026 pour les nouveaux clients au Canada." />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://cashinstinct.github.io/tangerine-orange-key/" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍊</text></svg>">
+  <link rel="icon" href="image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍊</text></svg>">
+
   <!-- Open Graph -->
   <meta property="og:title" content="Clé Orange Tangerine 14130944S1 — Prime de 50 $" />
   <meta property="og:description" content="Obtenez 50 $ à l'ouverture d'un compte Tangerine avec la Clé Orange 14130944S1. Valide en 2026." />
@@ -20,93 +21,299 @@
   <meta property="og:image:height" content="630" />
 
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #ffffff;
+      --surface: #ffffff;
+      --surface-soft: #fffaf7;
+      --surface-muted: #f5f5f5;
+      --text: #1a1a1a;
+      --text-soft: #444444;
+      --muted: #666666;
+      --border: #f0ddd1;
+      --border-soft: #f0e0d4;
+      --accent: #ff6600;
+      --accent-dark: #e06c00;
+      --warning-bg: #fff8e1;
+      --warning-text: #7c5800;
+      --warning-border: #f59e0b;
+      --shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f131a;
+        --surface: #161c24;
+        --surface-soft: #1b2430;
+        --surface-muted: #1a2029;
+        --text: #f4f7fb;
+        --text-soft: #d5dbe5;
+        --muted: #aeb7c4;
+        --border: #2a3442;
+        --border-soft: #2f3b4d;
+        --accent: #ff7a1a;
+        --accent-dark: #ff9a52;
+        --warning-bg: #2a2111;
+        --warning-text: #ffd98f;
+        --warning-border: #f59e0b;
+        --shadow: 0 14px 40px rgba(0, 0, 0, 0.35);
+      }
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
 
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       font-size: 17px;
       line-height: 1.65;
-      color: #1a1a1a;
-      background: #fff;
+      color: var(--text);
+      background: var(--bg);
     }
 
-    a { color: #e06c00; text-decoration: none; }
-    a:hover { text-decoration: underline; }
+    a {
+      color: var(--accent-dark);
+      text-decoration: none;
+    }
 
-    .container { max-width: 740px; margin: 0 auto; padding: 0 20px; }
+    a:hover {
+      text-decoration: underline;
+    }
 
-    /* HERO */
-    header {
-      background: #ff6600;
+    .container {
+      max-width: 740px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .topbar {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(10px);
+    }
+
+    .topbar-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 14px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: var(--text);
+      text-decoration: none;
+      letter-spacing: -0.02em;
+    }
+
+    .nav {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .nav a {
+      color: var(--muted);
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+
+    .nav a:hover,
+    .nav a.active {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    header.hero {
+      background: linear-gradient(135deg, var(--accent) 0%, #ff8f3d 100%);
       color: #fff;
       padding: 56px 20px 48px;
       text-align: center;
     }
-    header h1 {
+
+    header.hero h1 {
       font-size: clamp(1.7rem, 4vw, 2.4rem);
       font-weight: 800;
       line-height: 1.2;
       margin-bottom: 16px;
     }
-    header p {
+
+    header.hero p {
       font-size: 1.1rem;
-      opacity: 0.93;
+      opacity: 0.95;
       max-width: 560px;
-      margin: 0 auto 28px;
+      margin: 0 auto 24px;
     }
+
+    .code-wrap {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      background: rgba(255, 255, 255, 0.98);
+      padding: 12px 14px;
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+      margin-bottom: 14px;
+    }
+
     .code-hero {
       display: inline-block;
-      background: #fff;
-      color: #ff6600;
+      color: var(--accent);
       font-family: "Courier New", Courier, monospace;
       font-size: 2rem;
       font-weight: 900;
       letter-spacing: 0.06em;
-      padding: 14px 36px;
+      padding: 6px 10px;
       border-radius: 10px;
-      margin-bottom: 20px;
     }
 
-    /* WARNING */
+    .copy-btn,
+    .mini-copy-btn,
+    .cta-copy-btn {
+      appearance: none;
+      border: 0;
+      cursor: pointer;
+      font-weight: 800;
+      border-radius: 10px;
+      transition: transform 0.15s ease, opacity 0.15s ease;
+    }
+
+    .copy-btn:hover,
+    .mini-copy-btn:hover,
+    .cta-copy-btn:hover {
+      opacity: 0.92;
+      transform: translateY(-1px);
+    }
+
+    .copy-btn {
+      background: var(--accent);
+      color: #fff;
+      font-size: 0.95rem;
+      padding: 12px 16px;
+    }
+
+    .copy-status {
+      display: block;
+      font-size: 0.92rem;
+      min-height: 1.2em;
+      opacity: 0.95;
+      font-weight: 700;
+      margin-top: 6px;
+    }
+
     .warning {
-      background: #fff8e1;
-      border-left: 4px solid #f59e0b;
+      background: var(--warning-bg);
+      border-left: 4px solid var(--warning-border);
       padding: 14px 20px;
       font-size: 0.95rem;
-      color: #7c5800;
+      color: var(--warning-text);
       margin: 32px 0;
       border-radius: 0 6px 6px 0;
     }
 
-    /* SECTION TITLES */
+    .summary-box {
+      background: var(--surface-soft);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 18px 20px;
+      margin: 24px 0;
+    }
+
+    .summary-box h3 {
+      font-size: 1.05rem;
+      font-weight: 800;
+      margin-bottom: 12px;
+      color: var(--text);
+    }
+
+    .summary-box ul {
+      padding-left: 18px;
+    }
+
+    .summary-box li {
+      margin-bottom: 8px;
+      color: var(--text-soft);
+    }
+
+    .inline-copy {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 14px;
+    }
+
+    .mini-copy-btn {
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text);
+      padding: 8px 12px;
+      font-size: 0.9rem;
+    }
+
     .section-label {
       display: block;
       text-transform: uppercase;
       font-size: 0.75rem;
       font-weight: 700;
       letter-spacing: 0.12em;
-      color: #ff6600;
+      color: var(--accent);
       margin-bottom: 8px;
     }
 
-    main { padding: 52px 0; }
-    section { margin-bottom: 56px; }
-    section h2 { font-size: 1.55rem; font-weight: 800; margin-bottom: 20px; color: #111; }
-    section p { margin-bottom: 14px; }
+    main {
+      padding: 52px 0;
+    }
 
-    /* STEPS */
-    .steps { list-style: none; counter-reset: steps; }
+    section {
+      margin-bottom: 56px;
+    }
+
+    section h2 {
+      font-size: 1.55rem;
+      font-weight: 800;
+      margin-bottom: 20px;
+      color: var(--text);
+    }
+
+    section p {
+      margin-bottom: 14px;
+      color: var(--text-soft);
+    }
+
+    .steps {
+      list-style: none;
+      counter-reset: steps;
+    }
+
     .steps li {
       counter-increment: steps;
       display: flex;
       gap: 18px;
       margin-bottom: 28px;
     }
+
     .steps li::before {
       content: counter(steps);
       min-width: 36px;
       height: 36px;
-      background: #ff6600;
+      background: var(--accent);
       color: #fff;
       font-weight: 800;
       font-size: 1rem;
@@ -117,29 +324,63 @@
       flex-shrink: 0;
       margin-top: 2px;
     }
-    .steps li h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 4px; }
-    .steps li p { margin: 0; color: #444; }
 
-    /* CODE INLINE */
+    .steps li h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+      color: var(--text);
+    }
+
+    .steps li p {
+      margin: 0;
+      color: var(--text-soft);
+    }
+
     code {
       font-family: "Courier New", Courier, monospace;
-      background: #fff3e6;
-      color: #c94400;
+      background: color-mix(in srgb, var(--accent) 15%, var(--surface));
+      color: var(--accent-dark);
       padding: 2px 8px;
       border-radius: 4px;
       font-size: 0.97em;
       font-weight: 700;
     }
 
-    /* TABLE */
-    .table-wrap { overflow-x: auto; margin-top: 16px; }
-    table { width: 100%; border-collapse: collapse; font-size: 0.97rem; }
-    thead tr { background: #ff6600; color: #fff; }
-    thead th { padding: 12px 16px; text-align: left; font-weight: 700; }
-    tbody tr:nth-child(even) { background: #fff8f3; }
-    tbody td { padding: 11px 16px; border-bottom: 1px solid #f0e0d4; color: #333; }
+    .table-wrap {
+      overflow-x: auto;
+      margin-top: 16px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.97rem;
+    }
+
+    thead tr {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    thead th {
+      padding: 12px 16px;
+      text-align: left;
+      font-weight: 700;
+    }
+
+    tbody tr:nth-child(even) {
+      background: var(--surface-soft);
+    }
+
+    tbody td {
+      padding: 11px 16px;
+      border-bottom: 1px solid var(--border-soft);
+      color: var(--text-soft);
+    }
+
     .badge-best {
-      background: #ff6600;
+      background: var(--accent);
       color: #fff;
       font-size: 0.72rem;
       font-weight: 700;
@@ -149,26 +390,40 @@
       vertical-align: middle;
     }
 
-    /* ADVANTAGES */
-    .advantages { list-style: none; display: grid; gap: 12px; }
+    .advantages {
+      list-style: none;
+      display: grid;
+      gap: 12px;
+    }
+
     .advantages li {
       display: flex;
       align-items: flex-start;
       gap: 12px;
       padding: 14px 18px;
-      border: 1px solid #f0e0d4;
+      border: 1px solid var(--border-soft);
       border-radius: 8px;
-      background: #fffaf7;
+      background: var(--surface-soft);
+      color: var(--text-soft);
     }
-    .advantages li .icon { font-size: 1.3rem; flex-shrink: 0; }
 
-    /* FAQ ACCORDION */
-    .faq { display: grid; gap: 16px; }
+    .advantages li .icon {
+      font-size: 1.3rem;
+      flex-shrink: 0;
+    }
+
+    .faq {
+      display: grid;
+      gap: 16px;
+    }
+
     details {
-      border: 1px solid #f0ddd1;
+      border: 1px solid var(--border);
       border-radius: 8px;
       overflow: hidden;
+      background: var(--surface);
     }
+
     summary {
       font-weight: 700;
       padding: 16px 20px;
@@ -177,63 +432,148 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background: #fffaf7;
+      background: var(--surface-soft);
+      color: var(--text);
     }
-    summary::-webkit-details-marker { display: none; }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
     summary::after {
       content: "+";
       font-size: 1.4rem;
       font-weight: 300;
-      color: #ff6600;
+      color: var(--accent);
       flex-shrink: 0;
       margin-left: 12px;
     }
-    details[open] summary::after { content: "−"; }
-    details[open] summary { border-bottom: 1px solid #f0ddd1; }
-    .faq-body { padding: 16px 20px; font-size: 0.97rem; color: #333; line-height: 1.65; }
-    .faq-body p { margin-bottom: 10px; }
-    .faq-body p:last-child { margin-bottom: 0; }
 
-    /* CTA FINAL */
+    details[open] summary::after {
+      content: "−";
+    }
+
+    details[open] summary {
+      border-bottom: 1px solid var(--border);
+    }
+
+    .faq-body {
+      padding: 16px 20px;
+      font-size: 0.97rem;
+      color: var(--text-soft);
+      line-height: 1.65;
+      background: var(--surface);
+    }
+
+    .faq-body p {
+      margin-bottom: 10px;
+    }
+
+    .faq-body p:last-child {
+      margin-bottom: 0;
+    }
+
     .cta-section {
-      background: #ff6600;
+      background: linear-gradient(135deg, var(--accent) 0%, #ff8f3d 100%);
       color: #fff;
       text-align: center;
       padding: 52px 20px;
       border-radius: 12px;
       margin-bottom: 40px;
+      box-shadow: var(--shadow);
     }
-    .cta-section h2 { font-size: 1.6rem; margin-bottom: 12px; }
-    .cta-section p { opacity: 0.92; margin-bottom: 24px; font-size: 1.05rem; }
+
+    .cta-section h2 {
+      font-size: 1.6rem;
+      margin-bottom: 12px;
+      color: #fff;
+    }
+
+    .cta-section p {
+      opacity: 0.95;
+      margin-bottom: 24px;
+      font-size: 1.05rem;
+      color: #fff;
+    }
+
     .btn {
       display: inline-block;
       background: #fff;
-      color: #ff6600;
+      color: var(--accent);
       font-weight: 800;
       font-size: 1.05rem;
       padding: 14px 36px;
       border-radius: 8px;
       transition: opacity 0.15s;
     }
-    .btn:hover { opacity: 0.88; text-decoration: none; }
 
-    /* TRANSPARENCY */
+    .btn:hover {
+      opacity: 0.88;
+      text-decoration: none;
+    }
+
+    .cta-code-row {
+      margin-top: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .cta-code-pill {
+      display: inline-block;
+      background: rgba(255,255,255,0.97);
+      color: var(--accent);
+      font-family: "Courier New", Courier, monospace;
+      font-weight: 900;
+      letter-spacing: 0.04em;
+      padding: 10px 14px;
+      border-radius: 8px;
+    }
+
+    .cta-copy-btn {
+      background: rgba(255,255,255,0.18);
+      color: #fff;
+      padding: 10px 14px;
+      font-size: 0.95rem;
+    }
+
     .transparency {
-      background: #f5f5f5;
+      background: var(--surface-muted);
       border-radius: 8px;
       padding: 16px 20px;
       font-size: 0.9rem;
-      color: #555;
+      color: var(--text-soft);
       margin-top: 16px;
+      border: 1px solid var(--border);
     }
 
-    /* FOOTER */
     footer {
-      border-top: 1px solid #eee;
+      border-top: 1px solid var(--border);
       padding: 28px 20px;
       text-align: center;
       font-size: 0.85rem;
-      color: #888;
+      color: var(--muted);
+      background: var(--bg);
+    }
+
+    @media (max-width: 640px) {
+      .code-hero {
+        font-size: 1.5rem;
+      }
+
+      .topbar-inner {
+        align-items: flex-start;
+      }
+
+      .nav {
+        gap: 12px;
+      }
+
+      .code-wrap {
+        flex-direction: column;
+      }
     }
   </style>
 
@@ -313,247 +653,307 @@
 </head>
 <body>
 
-<!-- HERO -->
-<header>
-  <div class="container">
-    <h1>50 $ offerts à l'ouverture de votre compte Tangerine</h1>
-    <p>Entrez la Clé Orange <strong>14130944S1</strong> à la première étape de votre inscription pour recevoir votre prime de bienvenue — peu importe le compte choisi.</p>
-    <div class="code-hero">14130944S1</div>
-    <p style="font-size:0.92rem; opacity:0.85;">⚠️ À saisir pendant l'inscription — ne peut pas être ajouté après coup</p>
-  </div>
-</header>
-
-<!-- MAIN -->
-<main>
-  <div class="container">
-
-    <!-- Comment utiliser -->
-    <section id="comment-utiliser">
-      <span class="section-label">Comment utiliser la Clé Orange</span>
-      <h2>7 étapes pour recevoir la prime de 50 $</h2>
-      <p>La Clé Orange <code>14130944S1</code> doit être entrée à la première étape — pas après. Voici exactement où la saisir.</p>
-
-      <div class="warning">
-        ⚠️ <strong>Important :</strong> La Clé Orange ne peut pas être ajoutée une fois le compte créé. Assurez-vous de la saisir avant de confirmer votre inscription.
+  <nav class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="https://cashinstinct.github.io/">Cash Instinct</a>
+      <div class="nav">
+        <a href="https://cashinstinct.github.io/">Accueil</a>
+        <a href="https://cashinstinct.github.io/ebox-referral-code-2026/">EBOX</a>
+        <a href="https://cashinstinct.github.io/stickermule/">Sticker Mule</a>
+        <a href="https://cashinstinct.github.io/swagbucks-canada/">Swagbucks</a>
+        <a class="active" href="https://cashinstinct.github.io/tangerine-orange-key/">Tangerine</a>
       </div>
-
-      <ol class="steps">
-        <li>
-          <div>
-            <h3>Rendez-vous sur Tangerine.ca</h3>
-            <p>Allez sur <a href="https://www.tangerine.ca/app/#/visitor-enroll/instructions?locale=fr_CA" target="_blank" rel="noopener">tangerine.ca</a> et cliquez sur <strong>« Ouvrir un compte »</strong>.</p>
-          </div>
-        </li>
-        <li>
-          <div>
-            <h3>Entrez la Clé Orange</h3>
-            <p>À la <strong>première étape</strong> du formulaire, saisissez <code>14130944S1</code> dans le champ <strong>« Clé Orange »</strong>. Vérifiez que le code est accepté avant de continuer.</p>
-          </div>
-        </li>
-        <li>
-          <div>
-            <h3>Choisissez votre type de compte</h3>
-            <p>Sélectionnez un <strong>compte-chèques</strong> (sans frais, transactions illimitées) ou un <strong>compte d'épargne</strong> (taux promotionnel). La prime s'applique aux deux.</p>
-          </div>
-        </li>
-        <li>
-          <div>
-            <h3>Complétez votre profil</h3>
-            <p>Remplissez vos informations personnelles. Tangerine demande votre NAS pour la vérification d'identité — c'est une exigence bancaire standard au Canada.</p>
-          </div>
-        </li>
-        <li>
-          <div>
-            <h3>Vérifiez le résumé</h3>
-            <p>Assurez-vous que la <strong>prime de 50 $</strong> apparaît dans le résumé de votre demande avant de confirmer. Sinon, vérifiez la saisie de la Clé Orange.</p>
-          </div>
-        </li>
-        <li>
-          <div>
-            <h3>Déposez 250 $ CAD</h3>
-            <p>Dans les 30 jours suivant votre inscription, effectuez un dépôt initial de <strong>250 $ CAD</strong> et maintenez ce solde pendant <strong>60 jours consécutifs</strong>.</p>
-          </div>
-        </li>
-        <li>
-          <div>
-            <h3>Recevez votre prime de 50 $</h3>
-            <p>Tangerine crédite automatiquement la prime de <strong>50 $ CAD</strong> dans votre compte dans les 30 jours suivant la fin de la période de 60 jours.</p>
-          </div>
-        </li>
-      </ol>
-    </section>
-
-    <!-- Comptes disponibles -->
-    <section id="comptes">
-      <span class="section-label">Comptes disponibles</span>
-      <h2>Choisissez votre compte Tangerine</h2>
-      <p>Tous les comptes sont sans frais mensuels et admissibles à la prime de 50 $ avec la Clé Orange <code>14130944S1</code>.</p>
-      <div class="table-wrap">
-        <table>
-          <thead>
-            <tr>
-              <th>Compte</th>
-              <th>Frais mensuels</th>
-              <th>Intérêt</th>
-              <th>Idéal pour</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Compte-chèques <span class="badge-best">Populaire</span></td>
-              <td>0 $</td>
-              <td>Faible</td>
-              <td>Transactions quotidiennes, virements Interac illimités</td>
-            </tr>
-            <tr>
-              <td>Compte d'épargne</td>
-              <td>0 $</td>
-              <td>Taux promotionnel*</td>
-              <td>Épargne à court terme, fonds d'urgence</td>
-            </tr>
-            <tr>
-              <td>CELI</td>
-              <td>0 $</td>
-              <td>Variable</td>
-              <td>Épargne à l'abri de l'impôt</td>
-            </tr>
-            <tr>
-              <td>REER</td>
-              <td>0 $</td>
-              <td>Variable</td>
-              <td>Retraite, réduction d'impôt</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <p style="font-size:0.85rem; color:#888; margin-top:10px;">* Taux promotionnel pour les nouveaux clients — vérifiez le taux en vigueur sur <a href="https://www.tangerine.ca" target="_blank" rel="noopener">tangerine.ca</a>.</p>
-    </section>
-
-    <!-- Avantages -->
-    <section id="avantages">
-      <span class="section-label">Ce que vous obtenez</span>
-      <h2>Avantages inclus avec Tangerine</h2>
-      <ul class="advantages">
-        <li><span class="icon">💵</span><div><strong>Prime de 50 $ CAD</strong> — créditée automatiquement après 60 jours de solde maintenu.</div></li>
-        <li><span class="icon">🏦</span><div><strong>Compte-chèques sans frais</strong> — aucuns frais mensuels, transactions illimitées.</div></li>
-        <li><span class="icon">💳</span><div><strong>Carte de débit Mastercard</strong> — acceptée partout dans le monde.</div></li>
-        <li><span class="icon">📲</span><div><strong>Virements Interac gratuits</strong> — envoyer et recevoir de l'argent sans frais.</div></li>
-        <li><span class="icon">📈</span><div><strong>Taux promotionnel sur l'épargne</strong> — taux avantageux pour les nouveaux clients.</div></li>
-        <li><span class="icon">🔒</span><div><strong>Dépôts assurés (SADC)</strong> — filiale de la Banque Scotia, assurance jusqu'à 100 000 $.</div></li>
-        <li><span class="icon">🇨🇦</span><div><strong>Service en français</strong> — site, appli et service client disponibles en français.</div></li>
-      </ul>
-    </section>
-
-    <!-- FAQ -->
-    <section id="faq">
-      <span class="section-label">Questions fréquentes</span>
-      <h2>Questions sur Tangerine et la Clé Orange 14130944S1</h2>
-      <p>Tout ce qu'il faut savoir avant de s'inscrire.</p>
-      <div class="faq">
-
-        <details open>
-          <summary>Quel est un code promotionnel ou une Clé Orange Tangerine valide en 2026 ?</summary>
-          <div class="faq-body">
-            <p>La Clé Orange <code>14130944S1</code> est valide en 2026. Elle permet aux nouveaux clients d'obtenir une prime de <strong>50 $ CAD</strong> à l'ouverture d'un compte Tangerine.</p>
-          </div>
-        </details>
-
-        <details>
-          <summary>Comment utiliser la Clé Orange Tangerine 14130944S1 ?</summary>
-          <div class="faq-body">
-            <p>Lors de l'inscription en ligne sur le site de Tangerine Canada, saisissez le code <code>14130944S1</code> dans le champ nommé <strong>« Clé Orange »</strong> à la première étape du formulaire. Déposez ensuite 250 $ et maintenez ce solde durant 60 jours pour recevoir la prime de 50 $.</p>
-            <p><strong>Important :</strong> Le code ne peut pas être ajouté après la création du compte.</p>
-          </div>
-        </details>
-
-        <details>
-          <summary>Puis-je entrer la Clé Orange après avoir créé mon compte ?</summary>
-          <div class="faq-body">
-            <p>Non. La Clé Orange <code>14130944S1</code> doit être saisie à la <strong>première étape</strong> du formulaire d'ouverture de compte. Une fois le compte créé, il n'est plus possible d'ajouter un code de référence.</p>
-          </div>
-        </details>
-
-        <details>
-          <summary>Qui peut utiliser cette Clé Orange Tangerine ?</summary>
-          <div class="faq-body">
-            <p>Tout nouveau client Tangerine résidant au Canada peut utiliser la Clé Orange <code>14130944S1</code>. L'offre est destinée aux personnes qui n'ont <strong>jamais détenu de compte chez Tangerine</strong> auparavant.</p>
-          </div>
-        </details>
-
-        <details>
-          <summary>Quelles sont les conditions exactes pour obtenir la prime de 50 $ ?</summary>
-          <div class="faq-body">
-            <p>Trois conditions doivent être remplies :</p>
-            <p>1. Ouvrir un compte avec la Clé Orange <code>14130944S1</code>.<br>
-            2. Déposer <strong>250 $ CAD</strong> dans les 30 jours suivant l'inscription.<br>
-            3. Maintenir ce solde pendant <strong>60 jours consécutifs</strong>.</p>
-            <p>La prime est ensuite créditée automatiquement dans les 30 jours suivants.</p>
-          </div>
-        </details>
-
-        <details>
-          <summary>Est-ce que Tangerine est disponible au Québec ?</summary>
-          <div class="faq-body">
-            <p>Oui. Tangerine offre ses services dans toutes les provinces canadiennes, y compris le Québec. Le site, l'application mobile et le service client sont entièrement disponibles en <strong>français</strong>.</p>
-          </div>
-        </details>
-
-        <details>
-          <summary>Est-ce que Tangerine est une banque sécurisée ?</summary>
-          <div class="faq-body">
-            <p>Oui. Tangerine est une filiale de la <strong>Banque Scotia</strong>, l'une des grandes banques canadiennes. Les dépôts sont assurés par la <strong>Société d'assurance-dépôts du Canada (SADC)</strong> jusqu'à 100 000 $ par catégorie de dépôt.</p>
-          </div>
-        </details>
-
-        <details>
-          <summary>Y a-t-il des frais mensuels avec un compte Tangerine ?</summary>
-          <div class="faq-body">
-            <p>Non. Le compte-chèques Tangerine ne comporte <strong>aucuns frais mensuels</strong> et offre des transactions illimitées, incluant les virements Interac envoyés et reçus.</p>
-          </div>
-        </details>
-
-        <details>
-          <summary>Combien de temps faut-il pour recevoir la prime de 50 $ ?</summary>
-          <div class="faq-body">
-            <p>Après avoir maintenu un solde de 250 $ pendant 60 jours consécutifs, Tangerine crédite la prime de <strong>50 $ CAD</strong> dans votre compte dans les <strong>30 jours suivants</strong>. Le délai total est donc d'environ 3 mois après l'inscription.</p>
-          </div>
-        </details>
-
-        <details>
-          <summary>Peut-on combiner la Clé Orange avec d'autres offres Tangerine ?</summary>
-          <div class="faq-body">
-            <p>En général, la prime de parrainage ne peut pas être combinée avec d'autres offres promotionnelles en cours. Vérifiez les <a href="https://www.tangerine.ca/fr/offres/refer-a-friend" target="_blank" rel="noopener">conditions générales de Tangerine</a> au moment de votre inscription pour confirmer les offres applicables.</p>
-          </div>
-        </details>
-
-      </div>
-    </section>
-
-    <!-- CTA final -->
-    <div class="cta-section">
-      <h2>Prêt à ouvrir votre compte ?</h2>
-      <p>Cliquez ci-dessous, entrez la Clé Orange <strong>14130944S1</strong> à la première étape et recevez votre prime de 50 $.</p>
-      <a class="btn" href="https://www.tangerine.ca/app/#/visitor-enroll/instructions?locale=fr_CA" target="_blank" rel="noopener">
-        🍊 Ouvrir un compte Tangerine
-      </a>
-      <p style="margin-top:16px; font-size:0.9rem; opacity:0.85;">Clé Orange à entrer : <strong>14130944S1</strong></p>
     </div>
+  </nav>
 
-    <!-- Transparence -->
-    <div class="transparency">
-      <strong>Transparence :</strong> Si vous ouvrez un compte Tangerine avec la Clé Orange <code>14130944S1</code>, je reçois également une prime de parrainage en retour — Tangerine couvre ça de son côté. Votre prime de 50 $ reste entière et n'est pas affectée. <a href="https://www.tangerine.ca/fr/offres/refer-a-friend" target="_blank" rel="noopener">Voir les conditions de l'offre</a>.
+  <header class="hero">
+    <div class="container">
+      <h1>50 $ offerts à l'ouverture de votre compte Tangerine</h1>
+      <p>Entrez la Clé Orange <strong>14130944S1</strong> à la première étape de votre inscription pour recevoir votre prime de bienvenue — peu importe le compte choisi.</p>
+
+      <div class="code-wrap">
+        <div class="code-hero">14130944S1</div>
+        <button class="copy-btn" data-copy="14130944S1" data-target="copyStatusHero">Copier la clé</button>
+      </div>
+      <span class="copy-status" id="copyStatusHero" role="status" aria-live="polite" aria-atomic="true"></span>
+      
+      <p style="font-size:0.92rem; opacity:0.85;">⚠️ À saisir pendant l'inscription — ne peut pas être ajouté après coup</p>
     </div>
+  </header>
 
-  </div>
-</main>
+  <main>
+    <div class="container">
 
-<!-- FOOTER -->
-<footer>
-  <div class="container">
-    <p>Cette page est un site de référence indépendant. Elle n'est pas affiliée officiellement à Tangerine ou à la Banque Scotia.</p>
-    <p style="margin-top:6px;">Clé Orange Tangerine : <code>14130944S1</code> — Mis à jour : mai 2026</p>
-  </div>
-</footer>
+      <section id="comment-utiliser">
+        <span class="section-label">Comment utiliser la Clé Orange</span>
+        <h2>7 étapes pour recevoir la prime de 50 $</h2>
+        <p>La Clé Orange <code>14130944S1</code> doit être entrée à la première étape — pas après. Voici exactement où la saisir.</p>
+
+        <div class="summary-box">
+          <h3>Résumé rapide pour obtenir les 50 $</h3>
+          <ul>
+            <li>Ouvrez un compte Tangerine comme nouveau client.</li>
+            <li>Entrez la Clé Orange <code>14130944S1</code> à la première étape.</li>
+            <li>Déposez <strong>250 $ CAD</strong> dans les 30 jours.</li>
+            <li>Gardez ce montant pendant <strong>60 jours consécutifs</strong>.</li>
+            <li>Recevez ensuite votre prime de <strong>50 $ CAD</strong> automatiquement.</li>
+          </ul>
+
+          <div class="inline-copy">
+            <code>14130944S1</code>
+            <button class="mini-copy-btn" data-copy="14130944S1" data-target="copyStatusInline">Copier le code</button>
+            <span class="copy-status" id="copyStatusInline" role="status" aria-live="polite" aria-atomic="true"></span>
+          </div>
+        </div>
+
+        <div class="warning">
+          ⚠️ <strong>Important :</strong> La Clé Orange ne peut pas être ajoutée une fois le compte créé. Assurez-vous de la saisir avant de confirmer votre inscription.
+        </div>
+
+        <ol class="steps">
+          <li>
+            <div>
+              <h3>Rendez-vous sur Tangerine.ca</h3>
+              <p>Allez sur <a href="https://www.tangerine.ca/app/#/visitor-enroll/instructions?locale=fr_CA" target="_blank" rel="noopener">tangerine.ca</a> et cliquez sur <strong>« Ouvrir un compte »</strong>.</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h3>Entrez la Clé Orange</h3>
+              <p>À la <strong>première étape</strong> du formulaire, saisissez <code>14130944S1</code> dans le champ <strong>« Clé Orange »</strong>. Vérifiez que le code est accepté avant de continuer.</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h3>Choisissez votre type de compte</h3>
+              <p>Sélectionnez un <strong>compte-chèques</strong> (sans frais, transactions illimitées) ou un <strong>compte d'épargne</strong> (taux promotionnel). La prime s'applique aux deux.</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h3>Complétez votre profil</h3>
+              <p>Remplissez vos informations personnelles. Tangerine demande votre NAS pour la vérification d'identité — c'est une exigence bancaire standard au Canada.</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h3>Vérifiez le résumé</h3>
+              <p>Assurez-vous que la <strong>prime de 50 $</strong> apparaît dans le résumé de votre demande avant de confirmer. Sinon, vérifiez la saisie de la Clé Orange.</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h3>Déposez 250 $ CAD</h3>
+              <p>Dans les 30 jours suivant votre inscription, effectuez un dépôt initial de <strong>250 $ CAD</strong> et maintenez ce solde pendant <strong>60 jours consécutifs</strong>.</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h3>Recevez votre prime de 50 $</h3>
+              <p>Tangerine crédite automatiquement la prime de <strong>50 $ CAD</strong> dans votre compte dans les 30 jours suivant la fin de la période de 60 jours.</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section id="fiabilite-tangerine">
+        <span class="section-label">Banque en ligne fiable</span>
+        <h2>Qui est Tangerine ?</h2>
+        <p>Tangerine est une banque numérique canadienne détenue par la Banque Scotia. Elle permet d’ouvrir et de gérer ses comptes entièrement en ligne, avec une expérience simple et des frais réduits.</p>
+        <p>Les dépôts admissibles sont protégés par la Société d’assurance-dépôts du Canada (SADC), ce qui ajoute un niveau de confiance important pour les nouveaux clients.</p>
+      </section>
+
+      <section id="comptes">
+        <span class="section-label">Comptes disponibles</span>
+        <h2>Choisissez votre compte Tangerine</h2>
+        <p>Tous les comptes sont sans frais mensuels et admissibles à la prime de 50 $ avec la Clé Orange <code>14130944S1</code>.</p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Compte</th>
+                <th>Frais mensuels</th>
+                <th>Intérêt</th>
+                <th>Idéal pour</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Compte-chèques <span class="badge-best">Populaire</span></td>
+                <td>0 $</td>
+                <td>Faible</td>
+                <td>Transactions quotidiennes, virements Interac illimités</td>
+              </tr>
+              <tr>
+                <td>Compte d'épargne</td>
+                <td>0 $</td>
+                <td>Taux promotionnel*</td>
+                <td>Épargne à court terme, fonds d'urgence</td>
+              </tr>
+              <tr>
+                <td>CELI</td>
+                <td>0 $</td>
+                <td>Variable</td>
+                <td>Épargne à l'abri de l'impôt</td>
+              </tr>
+              <tr>
+                <td>REER</td>
+                <td>0 $</td>
+                <td>Variable</td>
+                <td>Retraite, réduction d'impôt</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p style="font-size:0.85rem; color:var(--muted); margin-top:10px;">* Taux promotionnel pour les nouveaux clients — vérifiez le taux en vigueur sur <a href="https://www.tangerine.ca" target="_blank" rel="noopener">tangerine.ca</a>.</p>
+      </section>
+
+      <section id="avantages">
+        <span class="section-label">Ce que vous obtenez</span>
+        <h2>Avantages inclus avec Tangerine</h2>
+        <ul class="advantages">
+          <li><span class="icon">💵</span><div><strong>Prime de 50 $ CAD</strong> — créditée automatiquement après 60 jours de solde maintenu.</div></li>
+          <li><span class="icon">🏦</span><div><strong>Compte-chèques sans frais</strong> — aucuns frais mensuels, transactions illimitées.</div></li>
+          <li><span class="icon">💳</span><div><strong>Carte de débit Mastercard</strong> — acceptée partout dans le monde.</div></li>
+          <li><span class="icon">📲</span><div><strong>Virements Interac gratuits</strong> — envoyer et recevoir de l'argent sans frais.</div></li>
+          <li><span class="icon">📈</span><div><strong>Taux promotionnel sur l'épargne</strong> — taux avantageux pour les nouveaux clients.</div></li>
+          <li><span class="icon">🔒</span><div><strong>Dépôts assurés (SADC)</strong> — filiale de la Banque Scotia, assurance jusqu'à 100 000 $.</div></li>
+          <li><span class="icon">🇨🇦</span><div><strong>Service en français</strong> — site, appli et service client disponibles en français.</div></li>
+        </ul>
+      </section>
+
+      <section id="faq">
+        <span class="section-label">Questions fréquentes</span>
+        <h2>Questions sur Tangerine et la Clé Orange 14130944S1</h2>
+        <p>Tout ce qu'il faut savoir avant de s'inscrire.</p>
+        <div class="faq">
+
+          <details open>
+            <summary>Quel est un code promotionnel ou une Clé Orange Tangerine valide en 2026 ?</summary>
+            <div class="faq-body">
+              <p>La Clé Orange <code>14130944S1</code> est valide en 2026. Elle permet aux nouveaux clients d'obtenir une prime de <strong>50 $ CAD</strong> à l'ouverture d'un compte Tangerine.</p>
+            </div>
+          </details>
+
+          <details>
+            <summary>Comment utiliser la Clé Orange Tangerine 14130944S1 ?</summary>
+            <div class="faq-body">
+              <p>Lors de l'inscription en ligne sur le site de Tangerine Canada, saisissez le code <code>14130944S1</code> dans le champ nommé <strong>« Clé Orange »</strong> à la première étape du formulaire. Déposez ensuite 250 $ et maintenez ce solde durant 60 jours pour recevoir la prime de 50 $.</p>
+              <p><strong>Important :</strong> Le code ne peut pas être ajouté après la création du compte.</p>
+            </div>
+          </details>
+
+          <details>
+            <summary>Puis-je entrer la Clé Orange après avoir créé mon compte ?</summary>
+            <div class="faq-body">
+              <p>Non. La Clé Orange <code>14130944S1</code> doit être saisie à la <strong>première étape</strong> du formulaire d'ouverture de compte. Une fois le compte créé, il n'est plus possible d'ajouter un code de référence.</p>
+            </div>
+          </details>
+
+          <details>
+            <summary>Qui peut utiliser cette Clé Orange Tangerine ?</summary>
+            <div class="faq-body">
+              <p>Tout nouveau client Tangerine résidant au Canada peut utiliser la Clé Orange <code>14130944S1</code>. L'offre est destinée aux personnes qui n'ont <strong>jamais détenu de compte chez Tangerine</strong> auparavant.</p>
+            </div>
+          </details>
+
+          <details>
+            <summary>Quelles sont les conditions exactes pour obtenir la prime de 50 $ ?</summary>
+            <div class="faq-body">
+              <p>Trois conditions doivent être remplies :</p>
+              <p>1. Ouvrir un compte avec la Clé Orange <code>14130944S1</code>.<br>
+              2. Déposer <strong>250 $ CAD</strong> dans les 30 jours suivant l'inscription.<br>
+              3. Maintenir ce solde pendant <strong>60 jours consécutifs</strong>.</p>
+              <p>La prime est ensuite créditée automatiquement dans les 30 jours suivants.</p>
+            </div>
+          </details>
+
+          <details>
+            <summary>Est-ce que Tangerine est disponible au Québec ?</summary>
+            <div class="faq-body">
+              <p>Oui. Tangerine offre ses services dans toutes les provinces canadiennes, y compris le Québec. Le site, l'application mobile et le service client sont entièrement disponibles en <strong>français</strong>.</p>
+            </div>
+          </details>
+
+          <details>
+            <summary>Est-ce que Tangerine est une banque sécurisée ?</summary>
+            <div class="faq-body">
+              <p>Oui. Tangerine est une filiale de la <strong>Banque Scotia</strong>, l'une des grandes banques canadiennes. Les dépôts sont assurés par la <strong>Société d'assurance-dépôts du Canada (SADC)</strong> jusqu'à 100 000 $ par catégorie de dépôt.</p>
+            </div>
+          </details>
+
+          <details>
+            <summary>Y a-t-il des frais mensuels avec un compte Tangerine ?</summary>
+            <div class="faq-body">
+              <p>Non. Le compte-chèques Tangerine ne comporte <strong>aucuns frais mensuels</strong> et offre des transactions illimitées, incluant les virements Interac envoyés et reçus.</p>
+            </div>
+          </details>
+
+          <details>
+            <summary>Combien de temps faut-il pour recevoir la prime de 50 $ ?</summary>
+            <div class="faq-body">
+              <p>Après avoir maintenu un solde de 250 $ pendant 60 jours consécutifs, Tangerine crédite la prime de <strong>50 $ CAD</strong> dans votre compte dans les <strong>30 jours suivants</strong>. Le délai total est donc d'environ 3 mois après l'inscription.</p>
+            </div>
+          </details>
+
+          <details>
+            <summary>Peut-on combiner la Clé Orange avec d'autres offres Tangerine ?</summary>
+            <div class="faq-body">
+              <p>En général, la prime de parrainage ne peut pas être combinée avec d'autres offres promotionnelles en cours. Vérifiez les <a href="https://www.tangerine.ca/fr/offres/refer-a-friend" target="_blank" rel="noopener">conditions générales de Tangerine</a> au moment de votre inscription pour confirmer les offres applicables.</p>
+            </div>
+          </details>
+
+        </div>
+      </section>
+
+      <div class="cta-section">
+        <h2>Prêt à ouvrir votre compte ?</h2>
+        <p>Cliquez ci-dessous, entrez la Clé Orange <strong>14130944S1</strong> à la première étape et recevez votre prime de 50 $.</p>
+        <a class="btn" href="https://www.tangerine.ca/app/#/visitor-enroll/instructions?locale=fr_CA" target="_blank" rel="noopener">
+          🍊 Ouvrir un compte Tangerine
+        </a>
+
+        <div class="cta-code-row">
+          <span class="cta-code-pill">14130944S1</span>
+          <button class="cta-copy-btn" data-copy="14130944S1" data-target="copyStatusCta">Copier la clé</button>
+        </div>
+        <span class="copy-status" id="copyStatusCta" role="status" aria-live="polite" aria-atomic="true"></span>
+      </div>
+
+      <div class="transparency">
+        <strong>Transparence :</strong> Si vous ouvrez un compte Tangerine avec la Clé Orange <code>14130944S1</code>, je reçois également une prime de parrainage en retour — Tangerine couvre ça de son côté. Votre prime de 50 $ reste entière et n'est pas affectée. <a href="https://www.tangerine.ca/fr/offres/refer-a-friend" target="_blank" rel="noopener">Voir les conditions de l'offre</a>.
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Cette page est un site de référence indépendant. Elle n'est pas affiliée officiellement à Tangerine ou à la Banque Scotia.</p>
+      <p style="margin-top:6px;">Clé Orange Tangerine : <code>14130944S1</code> — Mis à jour : mai 2026</p>
+    </div>
+  </footer>
+
+  <script>
+    async function copyText(text, statusId) {
+      const status = document.getElementById(statusId);
+      try {
+        await navigator.clipboard.writeText(text);
+        status.textContent = "Clé copiée ✔";
+        setTimeout(() => {
+          status.textContent = "";
+        }, 2200);
+      } catch (err) {
+        status.textContent = "Impossible de copier automatiquement.";
+      }
+    }
+
+    document.querySelectorAll("[data-copy]").forEach((button) => {
+      button.addEventListener("click", () => {
+        copyText(button.getAttribute("data-copy"), button.getAttribute("data-target"));
+      });
+    });
+  </script>
 
 </body>
 </html>
