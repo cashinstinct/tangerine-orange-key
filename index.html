@@ -185,18 +185,11 @@
       line-height: 1.65;
       color: var(--text);
       background: var(--bg);
-      padding: 0 0 52px 0;
     }
     a { color: var(--accent); text-decoration: none; font-weight: 600; }
     a:hover { text-decoration: underline; }
 
-    .wrapper {
-      width: 100%;
-      max-width: 740px;
-      margin-left: auto;
-      margin-right: auto;
-      padding: 0 20px;
-    }
+    .container { max-width: 740px; margin: 0 auto; padding: 0 20px; }
 
     .topbar {
       background: var(--surface);
@@ -206,28 +199,34 @@
       z-index: 100;
     }
     .topbar-inner {
-      max-width: 740px;
+      max-width: 1100px;
       margin: 0 auto;
-      padding: 14px 0;
+      padding: 14px 20px;
       display: flex;
       justify-content: space-between;
       align-items: center;
       gap: 16px;
+      flex-wrap: wrap;
     }
-    .brand { font-size: 1.05rem; font-weight: 800; color: var(--text); letter-spacing: -0.02em; }
-    .nav { display: flex; gap: 16px; align-items: center; }
-    .nav a { color: var(--muted); font-size: 0.95rem; font-weight: 600; }
-    .nav a:hover, .nav a.active { color: var(--accent); text-decoration: none; }
+    .brand { font-size: 1.05rem; font-weight: 800; color: var(--text); letter-spacing: -0.02em; text-decoration: none; }
+    .nav { display: flex; gap: 16px; flex-wrap: wrap; align-items: center; }
+    .nav a { color: var(--muted); font-size: 0.95rem; font-weight: 600; text-decoration: none; }
+    .nav a:hover, .nav a.active { color: var(--accent); }
 
     .theme-btn {
-      background: var(--surface-soft);
+      background: var(--surface-muted);
       border: 1px solid var(--border);
       color: var(--text);
       cursor: pointer;
       font-size: 1rem;
       padding: 6px 12px;
       border-radius: 6px;
+      transition: background 0.15s;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
     }
+    .theme-btn:hover { background: var(--border-soft); }
 
     .breadcrumb {
       font-size: 0.82rem;
@@ -241,10 +240,8 @@
     header.hero {
       background: linear-gradient(135deg, var(--accent) 0%, #ff8f3d 100%);
       color: #ffffff;
-      padding: 52px 20px;
+      padding: 56px 20px 48px;
       text-align: center;
-      border-radius: 14px;
-      box-shadow: var(--shadow);
     }
     header.hero h1 { font-size: clamp(1.7rem, 4vw, 2.4rem); font-weight: 800; line-height: 1.2; margin-bottom: 16px; color: #ffffff; }
     header.hero p { font-size: 1.1rem; opacity: 0.95; max-width: 560px; margin: 0 auto 24px; color: #ffffff; }
@@ -268,8 +265,8 @@
     .copy-status { display: block; font-size: 0.92rem; min-height: 1.2em; font-weight: 700; margin-top: 6px; color: #ffffff; }
     [data-theme="dark"] .code-wrap { background: #ffffff; }
 
-    main { padding: 40px 0; }
-    section { margin-bottom: 48px; }
+    main { padding: 52px 0; }
+    section { margin-bottom: 56px; }
     section h2 { font-size: 1.55rem; font-weight: 800; margin-bottom: 20px; color: var(--text); }
     section p { margin-bottom: 14px; color: var(--text-soft); }
 
@@ -341,7 +338,7 @@
     .cta-section h2, .cta-section p { color: #ffffff; }
     .cta-section h2 { font-size: 1.6rem; margin-bottom: 12px; }
     .cta-section p { opacity: 0.95; margin-bottom: 24px; font-size: 1.05rem; }
-    .btn { display: inline-block; background: #ffffff; color: var(--accent); font-weight: 800; font-size: 1.05rem; padding: 14px 36px; border-radius: 8px; }
+    .btn { display: inline-block; background: #ffffff; color: var(--accent); font-weight: 800; font-size: 1.05rem; padding: 14px 36px; border-radius: 8px; text-decoration: none; }
     .btn:hover { opacity: 0.9; text-decoration: none; }
     
     .cta-code-row { margin-top: 16px; display: flex; justify-content: center; align-items: center; gap: 10px; flex-wrap: wrap; }
@@ -350,37 +347,31 @@
     .cta-section .copy-status { color: #ffffff; }
 
     .transparency { background: var(--surface-soft); border-radius: 8px; padding: 16px 20px; font-size: 0.9rem; color: var(--text-soft); margin-top: 16px; border: 1px solid var(--border); }
-    footer { border-top: 1px solid var(--border); padding: 28px 0; text-align: center; font-size: 0.85rem; color: var(--muted); }
+    footer { border-top: 1px solid var(--border); padding: 28px 20px; text-align: center; font-size: 0.85rem; color: var(--muted); }
 
     @media (max-width: 640px) {
       .topbar-inner { padding: 14px 20px; }
-      .wrapper { padding: 0 16px; }
+      .nav { gap: 12px; }
     }
   </style>
 </head>
 <body>
 
-  <div class="wrapper">
-    <nav class="topbar">
-      <div class="topbar-inner">
-        <a class="brand" href="https://cashinstinct.github.io/">Cash Instinct</a>
-        <div class="nav">
-          <a href="https://cashinstinct.github.io/">Accueil</a>
-          <a href="https://cashinstinct.github.io/ebox-referral-code-2026/">EBOX</a>
-          <a href="https://cashinstinct.github.io/stickermule/fr/">Sticker Mule</a>
-          <a class="active" href="https://cashinstinct.github.io/tangerine-orange-key/">Tangerine</a>
-          <button id="theme-toggle" class="theme-btn" type="button" aria-label="Toggle theme">🌙</button>
-        </div>
+  <nav class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="https://cashinstinct.github.io/">Cash Instinct</a>
+      <div class="nav">
+        <a href="https://cashinstinct.github.io/">Accueil</a>
+        <a href="https://cashinstinct.github.io/ebox-referral-code-2026/">EBOX</a>
+        <a href="https://cashinstinct.github.io/stickermule/fr/">Sticker Mule</a>
+        <a class="active" href="https://cashinstinct.github.io/tangerine-orange-key/">Tangerine</a>
+        <button id="theme-toggle" class="theme-btn" type="button" aria-label="Toggle theme">🌙</button>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <nav class="breadcrumb" aria-label="Fil d'Ariane">
-      <a href="https://cashinstinct.github.io/">Accueil</a><span>&gt;</span>
-      <a href="https://cashinstinct.github.io/#finances">Banques en ligne</a><span>&gt;</span>
-      Tangerine Clé Orange
-    </nav>
-
-    <header class="hero">
+  <header class="hero">
+    <div class="container">
       <h1>50 $ offerts à l'ouverture de votre compte Tangerine</h1>
       <p>Entrez la Clé Orange <strong>14130944S1</strong> à la première étape de votre inscription pour recevoir votre prime de bienvenue — peu importe le compte choisi.</p>
 
@@ -391,10 +382,18 @@
       <span class="copy-status" id="copyStatusHero" role="status" aria-atomic="true" aria-live="polite"></span>
 
       <p style="font-size:0.92rem; opacity:0.85; margin-bottom: 0;">⚠️ À saisir pendant l'inscription — ne peut pas être ajouté après coup</p>
-    </header>
+    </div>
+  </header>
 
-    <main>
+  <main>
+    <div class="container">
       
+      <nav class="breadcrumb" aria-label="Fil d'Ariane">
+        <a href="https://cashinstinct.github.io/">Accueil</a><span>&gt;</span>
+        <a href="https://cashinstinct.github.io/#finances">Banques en ligne</a><span>&gt;</span>
+        Tangerine Clé Orange
+      </nav>
+
       <article class="summary-box" aria-label="Résumé rapide de l'offre">
         <h2>Résumé rapide de l'offre d'inscription</h2>
         <p>La <strong>Clé Orange Tangerine 14130944S1</strong> permet d'obtenir un bonus de bienvenue de 50 $ CAD lors de l'ouverture d'un premier compte-chèques ou compte d'épargne admissible au Canada. Pour valider l'offre, le nouvel utilisateur doit inscrire le code parrain 14130944S1 au cours du processus d'inscription, effectuer un dépôt initial d'un montant minimum de 250 $ CAD dans les 30 jours, puis maintenir ce solde pendant une période minimale de 60 jours consécutifs.</p>
@@ -519,7 +518,7 @@
           <details>
             <summary>Combien de temps faut-il pour recevoir la prime de 50 $ ?</summary>
             <div class="faq-body">
-              <p>Après avoir maintenu un solde de 250 $ pendant 60 jours consécutifs, la banque Tangerine crédite la prime de <strong>50 $ CAD</strong> dans votre compte dans les <strong>30 jours suivants</strong>. Le délai général d'attribution est d'environ 3 mois après l'inscription.</p>
+              <p>After l'avoir maintenu un solde de 250 $ pendant 60 jours consécutifs, la banque Tangerine crédite la prime de <strong>50 $ CAD</strong> dans votre compte dans les <strong>30 jours suivants</strong>. Le délai général d'attribution est d'environ 3 mois après l'inscription.</p>
             </div>
           </details>
 
@@ -560,13 +559,15 @@
       <div class="transparency">
         <strong>Transparence :</strong> Si vous ouvrez un compte Tangerine avec la Clé Orange <code>14130944S1</code>, je reçois également une prime de parrainage en retour — Tangerine couvre ça de son côté. Votre prime de 50 $ reste entière et n'est pas affectée.
       </div>
-    </main>
+    </div>
+  </main>
 
-    <footer>
+  <footer>
+    <div class="container">
       <p>Cette page est un site de référence indépendant. Elle n'est pas affiliée officiellement à Tangerine ou à la Banque Scotia.</p>
       <p style="margin-top:6px;">Clé Orange Tangerine : <code>14130944S1</code> — Mis à jour : mai 2026</p>
-    </footer>
-  </div>
+    </div>
+  </footer>
 
   <script>
     async function copyText(text, statusId) {
