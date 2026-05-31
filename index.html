@@ -46,7 +46,7 @@
         "name": "Clé Orange Tangerine 14130944S1 — Prime de 50 $ à l'inscription 2026",
         "description": "Utilisez la Clé Orange 14130944S1 lors de votre inscription pour obtenir une prime de bienvenue chez Tangerine Canada.",
         "inLanguage": "fr-CA",
-        "dateModified": "2026-05-24"
+        "dateModified": "2026-05-31"
       },
       {
         "@type": "BreadcrumbList",
@@ -120,18 +120,18 @@
           },
           {
             "@type": "Question",
-            "name": "Est-ce que la prime de la Clé Orange Tangerine est disponible au Québec ?",
+            "name": "Comment obtenir la prime supplémentaire de 250 $ chez Tangerine ?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Oui. La banque Tangerine offre l'ensemble de ses services bancaires en ligne et sa prime de parrainage dans toutes les provinces canadiennes, y compris le Québec. L'application mobile et le support technique téléphonique sont entièrement gérés en français."
+              "text": "Transférez votre dépôt direct de paie d'au moins 200 $/mois dans les 60 jours suivant l'ouverture. Maintenez les dépôts pendant 2 mois consécutifs pour recevoir un bonus de 250 $ cumulable avec la Clé Orange."
             }
           },
           {
             "@type": "Question",
-            "name": "Est-ce que la banque Tangerine est sécurisée au Canada ?",
+            "name": "Quels sont les numéros d'institution et de transit de Tangerine ?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Oui. Tangerine est une filiale à 100 % de la Banque Scotia. Les dépôts admissibles sont assurés par la Société d'assurance-dépôts du Canada (SADC) jusqu'à un montant maximal de 100 000 $ par catégorie de dépôt."
+              "text": "Pour configurer un dépôt direct de paie chez Tangerine, le numéro d'institution est le 614 et le numéro de transit est le 00152."
             }
           }
         ]
@@ -243,7 +243,7 @@
       padding: 56px 20px 48px;
       text-align: center;
     }
-    header.hero h1 { font-size: clamp(1.7rem, 4vw, 2.4rem); font-weight: 800; line-height: 1.2; margin-bottom: 16px; color: #ffffff; }
+    header.hero h1 { font-size: clamp(1.7rem, 4vw, 2.4rem); font-weight: 800; line-height: 1.2; margin-bottom: 16px; color: #ffffff; text-wrap: pretty; }
     header.hero p { font-size: 1.1rem; opacity: 0.95; max-width: 560px; margin: 0 auto 24px; color: #ffffff; }
 
     .code-wrap {
@@ -259,11 +259,28 @@
       margin-bottom: 14px;
     }
     .code-hero { color: var(--accent); font-family: "Courier New", Courier, monospace; font-size: 2rem; font-weight: 900; letter-spacing: 0.06em; }
-    .copy-btn, .cta-copy-btn { border: 0; cursor: pointer; font-weight: 800; border-radius: 10px; transition: transform 0.15s; }
-    .copy-btn:hover, .cta-copy-btn:hover { transform: translateY(-1px); opacity: 0.95; }
-    .copy-btn { background: var(--accent); color: #ffffff; font-size: 0.95rem; padding: 12px 16px; }
+    
+    .copy-btn, .cta-copy-btn, .cta-btn-hero { 
+      border: 0; 
+      cursor: pointer; 
+      font-weight: 800; 
+      border-radius: 24px; 
+      transition: transform 0.15s, background 0.15s; 
+    }
+    .copy-btn:hover, .cta-copy-btn:hover, .cta-btn-hero:hover { 
+      transform: translateY(-1px); 
+      opacity: 0.95; 
+    }
+    .copy-btn { 
+      background: #200b00; 
+      color: #ffffff; 
+      font-size: 0.95rem; 
+      padding: 12px 16px; 
+    }
     .copy-status { display: block; font-size: 0.92rem; min-height: 1.2em; font-weight: 700; margin-top: 6px; color: #ffffff; }
+    
     [data-theme="dark"] .code-wrap { background: #ffffff; }
+    [data-theme="dark"] .copy-btn { background: var(--accent); color: #0f131a; }
 
     main { padding: 52px 0; }
     section { margin-bottom: 56px; }
@@ -338,8 +355,17 @@
     .cta-section h2, .cta-section p { color: #ffffff; }
     .cta-section h2 { font-size: 1.6rem; margin-bottom: 12px; }
     .cta-section p { opacity: 0.95; margin-bottom: 24px; font-size: 1.05rem; }
-    .btn { display: inline-block; background: #ffffff; color: var(--accent); font-weight: 800; font-size: 1.05rem; padding: 14px 36px; border-radius: 8px; text-decoration: none; }
-    .btn:hover { opacity: 0.9; text-decoration: none; }
+    
+    .cta-btn-hero { 
+      display: inline-block; 
+      background: #ffffff; 
+      color: var(--accent); 
+      font-size: 1.1rem; 
+      padding: 16px 40px; 
+      box-shadow: var(--shadow); 
+      text-decoration: none; 
+    }
+    .cta-btn-hero:hover { background: var(--surface-soft); text-decoration: none; }
     
     .cta-code-row { margin-top: 16px; display: flex; justify-content: center; align-items: center; gap: 10px; flex-wrap: wrap; }
     .cta-code-pill { display: inline-block; background: #ffffff; color: var(--accent); font-family: "Courier New", Courier, monospace; font-weight: 900; letter-spacing: 0.04em; padding: 10px 14px; border-radius: 8px; }
@@ -373,7 +399,7 @@
   <header class="hero">
     <div class="container">
       <h1>50 $ offerts à l'ouverture de votre compte Tangerine</h1>
-      <p>Entrez la Clé Orange <strong>14130944S1</strong> à la première étape de votre inscription pour recevoir votre prime de bienvenue — peu importe le compte choisi.</p>
+      <p>Entrez la Clé Orange ou Cle Orange <strong>14130944S1</strong> à la première étape de votre inscription pour recevoir votre prime de bienvenue — peu importe le compte choisi.</p>
 
       <div class="code-wrap">
         <div class="code-hero">14130944S1</div>
@@ -404,7 +430,7 @@
         <h2>7 étapes pour recevoir la prime de 50 $</h2>
         
         <div class="warning">
-          ⚠️ <strong>Important :</strong> La Clé Orange ne peut pas être ajoutée une fois le compte créé. Assurez-vous de la saisir avant de confirmer votre inscription.
+          ⚠️ <strong>Astuce de cumul maximum (Gagnez 300 $) :</strong> La Clé Orange de 50 $ est 100 % combinable avec la promotion officielle du compte-chèques Tangerine. En entrant le code <code>14130944S1</code> <strong>lors de votre inscription</strong> et en y transférant vos dépôts directs de paie, vous ajoutez 250 $ de bonus pour un <strong>total de 300 $ CAD</strong> versé directement dans votre compte !
         </div>
 
         <ol class="steps">
@@ -416,7 +442,7 @@
           </li>
           <li>
             <div>
-              <h3>Entrez la Clé Orange</h3>
+              <h3>Entrez la Cle Orange</h3>
               <p>À la <strong>première étape</strong> du formulaire, saisissez <code>14130944S1</code> dans le champ <strong>« Clé Orange »</strong>.</p>
             </div>
           </li>
@@ -503,7 +529,7 @@
         <span class="section-label">Ce que vous obtenez</span>
         <h2>Avantages inclus avec Tangerine</h2>
         <ul class="advantages">
-          <li><span class="icon">💵</span><div><strong>Prime de 50 $ CAD</strong> — créditée automatiquement.</div></li>
+          <li><span class="icon">💵</span><div><strong>Prime de 50 $ CAD</strong> — créditée automatiquement grâce au parrainage.</div></li>
           <li><span class="icon">🏦</span><div><strong>Compte-chèques sans frais</strong> — aucuns frais mensuels, transactions illimitées.</div></li>
           <li><span class="icon">💳</span><div><strong>Carte de débit Interac</strong> — acceptée partout.</div></li>
           <li><span class="icon">📲</span><div><strong>Virements Interac gratuits</strong> — envoyer et recevoir de l'argent sans frais.</div></li>
@@ -518,7 +544,35 @@
           <details>
             <summary>Combien de temps faut-il pour recevoir la prime de 50 $ ?</summary>
             <div class="faq-body">
-              <p>After l'avoir maintenu un solde de 250 $ pendant 60 jours consécutifs, la banque Tangerine crédite la prime de <strong>50 $ CAD</strong> dans votre compte dans les <strong>30 jours suivants</strong>. Le délai général d'attribution est d'environ 3 mois après l'inscription.</p>
+              <p>Après avoir maintenu un solde de 250 $ pendant 60 jours consécutifs, la banque Tangerine crédite la prime de <strong>50 $ CAD</strong> dans votre compte dans les <strong>30 jours suivants</strong>. Le délai général d'attribution est d'environ 3 mois après l'inscription.</p>
+            </div>
+          </details>
+
+          <details>
+            <summary>Comment obtenir la prime supplémentaire de 250 $ sur le compte-chèques ?</summary>
+            <div class="faq-body">
+              <p>En plus des 50 $ de la Clé Orange, vous pouvez obtenir 250 $ de plus en transférant votre dépôt direct de paie (salaire, pension, RE, RPC) vers votre nouveau Compte-chèques Tangerine. Le dépôt mensuel doit être d'au moins 200 $ par mois. Le premier dépôt doit être traité dans les 60 jours suivant l'ouverture du compte, et vous devez maintenir ces dépôts pendant au moins 2 mois consécutifs.</p>
+            </div>
+          </details>
+
+          <details>
+            <summary>Qu'est-ce qu'une Cle Orange ou Clé Orange Tangerine ?</summary>
+            <div class="faq-body">
+              <p>Que vous l'écriviez avec ou sans accent (Cle Orange ou Clé Orange), il s'agit du terme officiel utilisé par la banque Tangerine pour désigner son code de parrainage. Entrer le code <code>14130944S1</code> permet de déclencher l'attribution de la prime de bienvenue.</p>
+            </div>
+          </details>
+
+          <details>
+            <summary>Quels sont les codes d'institution de Tangerine pour transférer ma paie ?</summary>
+            <div class="faq-body">
+              <p>Pour acheminer vos dépôts directs de paie ou configurer un prélèvement automatique, votre employeur ou fournisseur aura besoin des coordonnées bancaires officielles de Tangerine : <strong>Numéro d'institution : 614</strong> et <strong>Numéro de transit : 00152</strong>. Votre numéro de compte personnel est accessible dans les détails de votre profil sur l'application mobile.</p>
+            </div>
+          </details>
+
+          <details>
+            <summary>Quand la prime de paie de 250 $ est-elle versée par Tangerine ?</summary>
+            <div class="faq-body">
+              <p>Une fois que le système informatique de Tangerine valide le passage de vos dépôts directs de paie pendant deux mois consécutifs, le bonus algorithmique de 250 $ est déposé automatiquement dans votre compte-chèques au cours du mois suivant.</p>
             </div>
           </details>
 
@@ -541,19 +595,19 @@
       <div class="cta-section">
         <h2>Prêt à ouvrir votre compte ?</h2>
         <p>Cliquez ci-dessous, entrez la Clé Orange <strong>14130944S1</strong> à la première étape et recevez votre prime de 50 $.</p>
-        <a class="btn" href="https://www.tangerine.ca/app/#/visitor-enroll/instructions?locale=fr_CA" target="_blank" rel="noopener">
+        <a class="cta-btn-hero" href="https://www.tangerine.ca/app/#/visitor-enroll/instructions?locale=fr_CA" target="_blank" rel="noopener">
           🍊 Ouvrir un compte Tangerine
         </a>
 
         <div class="cta-code-row">
           <span class="cta-code-pill">14130944S1</span>
-          <button class="cta-copy-btn" data-copy="14130944S1" data-target="copyStatusCta">Copier la clé</button>
+          <button class="cta-copy-btn copy-btn" data-copy="14130944S1" data-target="copyStatusCta">Copier la clé</button>
         </div>
         <span class="copy-status" id="copyStatusCta" role="status" aria-atomic="true" aria-live="polite"></span>
       </div>
 
       <article class="glossary-box" aria-label="Glossaire des expressions équivalentes">
-        <strong>Variantes de recherche courantes :</strong> Selon les conventions terminologiques du secteur bancaire canadien, l'identifiant <code>14130944S1</code> correspond indifféremment aux expressions suivantes : <em>Clé Orange Tangerine</em>, <em>code de parrainage Tangerine Canada</em>, <em>code promo Tangerine</em>, <em>bonus d'inscription Tangerine Banque</em>, ou <em>référence de parrainage Scotia Tangerine</em>. Toutes ces variantes font référence au même protocole d'activation de la prime de 50 $.
+        <strong>Variantes de recherche courantes :</strong> Selon les conventions terminologiques du secteur bancaire canadien, l'identifiant <code>14130944S1</code> correspond indifféremment aux expressions suivantes : <em>Clé Orange Tangerine</em>, <em>cle orange tangerine</em>, <em>code de parrainage Tangerine Canada</em>, <em>code promo Tangerine</em>, <em>bonus d'inscription Tangerine Banque</em>, ou <em>référence de parrainage de l'orange key tangerine</em>. Toutes ces variantes font référence au même protocole d'activation de la prime de 50 $.
       </article>
 
       <div class="transparency">
@@ -570,12 +624,17 @@
   </footer>
 
   <script>
-    async function copyText(text, statusId) {
+    async function copyText(text, button, statusId) {
       const status = document.getElementById(statusId);
       try {
         await navigator.clipboard.writeText(text);
-        status.textContent = "Clé copiée ✔";
-        setTimeout(() => { status.textContent = ""; }, 2200);
+        button.textContent = "Copié !";
+        button.style.background = "color-mix(in srgb, var(--accent) 15%, transparent)";
+        
+        setTimeout(() => { 
+          button.textContent = "Copier la clé"; 
+          button.style.background = "";
+        }, 2000);
       } catch (err) {
         status.textContent = "Impossible de copier automatiquement.";
       }
@@ -583,7 +642,7 @@
 
     document.querySelectorAll("[data-copy]").forEach((button) => {
       button.addEventListener("click", () => {
-        copyText(button.getAttribute("data-copy"), button.getAttribute("data-target"));
+        copyText(button.getAttribute("data-copy"), button, button.getAttribute("data-target"));
       });
     });
 
