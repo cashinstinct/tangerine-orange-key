@@ -3,42 +3,52 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#ff6600" />
+
+  <!-- theme-color avec support dark mode -->
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ff6600" />
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0f131a" />
+
   <title>Clé Orange Tangerine 14130944S1 — Prime de 50 $ à l'inscription 2026</title>
   <meta name="description" content="Utilisez la Clé Orange 14130944S1 lors de votre inscription chez Tangerine pour obtenir une prime de 50 $ CAD. Code de parrainage valide en 2026 au Canada." />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://cashinstinct.github.io/tangerine-orange-key/" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍊</text></svg>">
 
+  <!-- hreflang -->
+  <link rel="alternate" hreflang="fr-CA" href="https://cashinstinct.github.io/tangerine-orange-key/" />
+  <link rel="alternate" hreflang="fr" href="https://cashinstinct.github.io/tangerine-orange-key/" />
+  <link rel="alternate" hreflang="x-default" href="https://cashinstinct.github.io/tangerine-orange-key/" />
+
   <meta property="og:title" content="Clé Orange Tangerine 14130944S1 — Prime de 50 $" />
   <meta property="og:description" content="Obtenez 50 $ à l'ouverture d'un compte Tangerine avec la Clé Orange 14130944S1. Valide en 2026." />
   <meta property="og:locale" content="fr_CA" />
+  <!-- og:locale:alternate -->
+  <meta property="og:locale:alternate" content="fr_FR" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://cashinstinct.github.io/tangerine-orange-key/" />
-  <meta property="og:image" content="https://cashinstinct.github.io/tangerine-orange-key/og.svg" />
+  <!-- og.png au lieu de og.svg -->
+  <meta property="og:image" content="https://cashinstinct.github.io/tangerine-orange-key/og.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
 
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Clé Orange Tangerine" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Clé Orange Tangerine 14130944S1 — Prime de 50 $" />
   <meta name="twitter:description" content="Saisissez le code 14130944S1 à l'inscription pour débloquer votre bonus de 50 $ CAD." />
+  <!-- twitter:image manquant -->
+  <meta name="twitter:image" content="https://cashinstinct.github.io/tangerine-orange-key/og.png" />
 
-  <script>
-    try {
-      let theme = localStorage.getItem('theme');
-      if (!theme) {
-        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-      }
-      document.documentElement.setAttribute('data-theme', theme);
-    } catch (e) {
-      document.documentElement.setAttribute('data-theme', 'light');
-    }
-  </script>
+  <!-- script thème déplacé juste avant </head> — voir bas du <head> -->
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://cashinstinct.github.io/#website",
+        "url": "https://cashinstinct.github.io/",
+        "name": "Cash Instinct"
+      },
       {
         "@type": "WebPage",
         "@id": "https://cashinstinct.github.io/tangerine-orange-key/",
@@ -46,7 +56,21 @@
         "name": "Clé Orange Tangerine 14130944S1 — Prime de 50 $ à l'inscription 2026",
         "description": "Utilisez la Clé Orange 14130944S1 lors de votre inscription pour obtenir une prime de bienvenue chez Tangerine Canada.",
         "inLanguage": "fr-CA",
-        "dateModified": "2026-05-31"
+        "isPartOf": { "@id": "https://cashinstinct.github.io/#website" },
+        "datePublished": "2024-05-01",
+        "dateModified": "2026-06-01",
+        "author": {
+          "@type": "Organization",
+          "name": "Cash Instinct"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Cash Instinct",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://cashinstinct.github.io/logo.png"
+          }
+        }
       },
       {
         "@type": "BreadcrumbList",
@@ -60,13 +84,14 @@
       {
         "@type": "Product",
         "name": "Tangerine Banque en Ligne",
-        "image": "https://cashinstinct.github.io/tangerine-orange-key/og.svg",
+        "image": "https://cashinstinct.github.io/tangerine-orange-key/og.png",
         "brand": {
           "@type": "Brand",
           "name": "Tangerine"
         },
         "description": "Comptes chèques et épargne sans frais mensuels au Canada avec bonus de bienvenue de 50 $ via l'activation d'une Clé Orange.",
         "category": "Financial Services",
+        "areaServed": "CA",
         "offers": {
           "@type": "Offer",
           "priceCurrency": "CAD",
@@ -74,32 +99,17 @@
           "priceValidUntil": "2027-12-31",
           "itemCondition": "https://schema.org/NewCondition",
           "description": "L'ouverture de compte est gratuite et l'utilisation du code parrain génère une prime automatique de 50 $.",
-          "availability": "https://schema.org/InStock",
-          "hasMerchantReturnPolicy": {
-            "@type": "MerchantReturnPolicy",
-            "applicableCountry": "CA",
-            "returnPolicyCategory": "MerchantReturnUnspecified"
-          },
-          "shippingDetails": {
-            "@type": "OfferShippingDetails",
-            "shippingRate": { "@type": "MonetaryAmount", "value": "0.00", "currency": "CAD" },
-            "shippingDestination": { "@type": "DefinedRegion", "addressCountry": "CA" },
-            "deliveryTime": {
-              "@type": "ShippingDeliveryTime",
-              "handlingTime": { "@type": "QuantitativeValue", "minValue": 0, "maxValue": 0, "unitCode": "DAY" },
-              "transitTime": { "@type": "QuantitativeValue", "minValue": 0, "maxValue": 0, "unitCode": "DAY" }
-            }
-          }
+          "availability": "https://schema.org/InStock"
         },
         "review": {
           "@type": "Review",
-          "author": { "@type": "Person", "name": "Cash Instinct" },
+          "author": { "@type": "Organization", "name": "Cash Instinct" },
           "reviewRating": { "@type": "Rating", "ratingValue": "4.5", "bestRating": "5", "worstRating": "1" },
           "reviewBody": "Tangerine est la meilleure banque en ligne sans frais au Québec. Les virements Interac sont gratuits et illimités, et le couplage avec la Clé Orange sécurise un retour immédiat sur le dépôt initial.",
           "publisher": { "@type": "Organization", "name": "Cash Instinct" }
         }
       },
-            {
+      {
         "@type": "FAQPage",
         "mainEntity": [
           {
@@ -131,7 +141,7 @@
             "name": "La Clé Orange (50 $) est-elle cumulable avec la prime de dépôt de paie (250 $) et les offres d'épargne ?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Mécaniquement, oui ! L'offre de paie de 250 $ pour un compte-chèques s'active par vos comportements bancaires (sans code), ce qui laisse le champ libre pour entrer la Clé Orange 14130944S1 à l'inscription. De plus, la Clé Orange s'applique sur les comptes de base et cohabite généralement avec les taux d'intérêt promotionnels temporaires sur l'épargne. (Note : Tangerine précise que l'offre de paie ne se combine pas à d'autres primes de compte-chèques, mais la Clé Orange est une prime d'acquisition globale)."
+              "text": "Mécaniquement, oui ! L'offre de paie de 250 $ pour un compte-chèques s'active par vos comportements bancaires (sans code), ce qui laisse le champ libre pour entrer la Clé Orange 14130944S1 à l'inscription. De plus, la Clé Orange s'applique sur les comptes de base et cohabite généralement avec les taux d'intérêt promotionnels temporaires sur l'épargne."
             }
           },
           {
@@ -139,7 +149,7 @@
             "name": "Comment et quand obtenir la prime supplémentaire de 250 $ pour un compte-chèques ?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Aucun code supplémentaire n'est requis. Une fois votre compte ouvert avec la Clé Orange, transférez votre dépôt direct de paie (salaire, pension, RE, RPC) vers votre nouveau Compte-chèques Tangerine (minimum 200 $ par mois). Le premier versement doit arriver dans les 60 jours suivant l'ouverture. Une fois ces dépôts maintenus pendant deux mois consécutifs, le système versera automatiquement les 250 $ au cours du mois suivant."
+              "text": "Aucun code supplémentaire n'est requis. Une fois votre compte ouvert avec la Clé Orange, transférez votre dépôt direct de paie vers votre nouveau Compte-chèques Tangerine (minimum 200 $ par mois). Le premier versement doit arriver dans les 60 jours suivant l'ouverture. Une fois ces dépôts maintenus pendant deux mois consécutifs, le système versera automatiquement les 250 $ au cours du mois suivant."
             }
           },
           {
@@ -147,15 +157,16 @@
             "name": "Quels sont les codes d'institution de Tangerine pour transférer ma paie ?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Pour acheminer vos dépôts directs de paie ou configurer un prélèvement automatique, votre employeur ou fournisseur aura besoin des coordonnées bancaires officielles de Tangerine : Numéro d'institution : 614 et Numéro de transit : 00152. Votre numéro de compte personnel est accessible dans les détails de votre profil sur l'application mobile."
+              "text": "Pour acheminer vos dépôts directs de paie, votre employeur aura besoin des coordonnées bancaires officielles de Tangerine : Numéro d'institution : 614 et Numéro de transit : 00152. Votre numéro de compte personnel est accessible dans les détails de votre profil sur l'application mobile."
             }
           }
         ]
       }
-    
+    ]
+  }
   </script>
-   
-       <style>
+
+  <style>
     :root {
       --bg: #ffffff;
       --surface: #ffffff;
@@ -163,7 +174,7 @@
       --surface-muted: #f5f5f5;
       --text: #1a1a1a;
       --text-soft: #444444;
-      --muted: #655345; /* Assombri pour l'accessibilité WCAG >= 4.5:1 */
+      --muted: #655345;
       --border: #f0ddd1;
       --border-soft: #f0e0d4;
       --accent: #ff6600;
@@ -181,7 +192,7 @@
       --surface-muted: #1a2029;
       --text: #f4f7fb;
       --text-soft: #d5dbe5;
-      --muted: #94a3b8; /* Éclairci pour le contraste en mode sombre */
+      --muted: #94a3b8;
       --border: #2a3442;
       --border-soft: #2f3b4d;
       --accent: #ff7a1a;
@@ -244,12 +255,7 @@
     }
     .theme-btn:hover { background: var(--border-soft); }
 
-    .breadcrumb {
-      font-size: 0.82rem;
-      color: var(--muted);
-      margin-top: 16px;
-      margin-bottom: 8px;
-    }
+    .breadcrumb { font-size: 0.82rem; color: var(--muted); margin-top: 16px; margin-bottom: 8px; }
     .breadcrumb a { color: var(--muted); font-weight: 500; }
     .breadcrumb span { margin: 0 6px; }
 
@@ -259,241 +265,233 @@
       padding: 56px 20px 48px;
       text-align: center;
     }
-    header.hero h1 { font-size: clamp(1.7rem, 4vw, 2.4rem); font-weight: 800; line-height: 1.2; margin-bottom: 16px; color: #ffffff; text-wrap: pretty; }
+    header.hero h1 { font-size: clamp(1.7rem, 4vw, 2.4rem); font-weight: 800; line-height: 1.2; margin-bottom: 16px; color: #ffffff; }
     header.hero p { font-size: 1.1rem; opacity: 0.95; max-width: 560px; margin: 0 auto 24px; color: #ffffff; }
 
-    /* ==========================================================================
-   1. STRUCTURE DE LA GRILLE (HERO METHODS EN 2 COLONNES)
-   ========================================================================== */
-.hero-methods {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  margin: 28px auto 0;
-  width: 100%;
-  max-width: 560px; /* Largeur sur mobile */
-}
+    .hero-methods {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin: 28px auto 0;
+      width: 100%;
+      max-width: 560px;
+    }
+    .hero-methods > div {
+      width: 100%;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .hero-methods a img { transition: opacity 0.15s ease; }
+    .hero-methods a:hover img { opacity: 0.9; }
+    .hero-methods p {
+      color: var(--text-soft) !important;
+      font-size: 0.85rem;
+      margin-top: 8px;
+      text-align: center;
+    }
+    [data-theme="dark"] .hero-methods p { color: var(--text-soft) !important; }
 
-.hero-methods > div {
-  width: 100%;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
+    @media (min-width: 768px) {
+      .hero-methods {
+        flex-direction: row;
+        max-width: 1100px;
+        gap: 32px;
+        align-items: stretch;
+      }
+      .hero-methods > div { flex: 1; }
+    }
 
-/* Le conteneur de copie universel (Desktop et Mobile) */
-.input-copy-group {
-  display: flex;
-  background: var(--bg);
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  overflow: hidden;
-  margin: 16px 0;
-  padding: 4px;
-}
+    .input-copy-group {
+      display: flex;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+      margin: 16px 0;
+      padding: 4px;
+    }
 
-/* Transition fluide pour l'image cliquable */
-.hero-methods a img {
-  transition: opacity 0.15s ease;
-}
-.hero-methods a:hover img {
-  opacity: 0.9;
-}
+    @media (max-width: 480px) {
+      .input-copy-group {
+        flex-direction: column;
+        background: transparent !important;
+        border: none !important;
+        padding: 0;
+        gap: 8px;
+      }
+      .input-copy-group input[type="text"] {
+        background: var(--surface-muted) !important;
+        border: 1px solid var(--border) !important;
+        border-radius: 8px !important;
+        width: 100% !important;
+      }
+      .input-copy-group .copy-btn {
+        width: 100% !important;
+        padding: 12px 16px !important;
+        border-radius: 8px !important;
+        justify-content: center;
+      }
+    }
 
-/* Textes de description sous les images */
-.hero-methods p {
-  color: var(--text-soft) !important;
-  font-size: 0.85rem;
-  margin-top: 8px;
-  text-align: center;
-}
+    .copy-btn, .cta-copy-btn, .cta-btn-hero {
+      border: 0;
+      cursor: pointer;
+      font-weight: 800;
+      border-radius: 24px;
+      transition: transform 0.15s, background 0.15s;
+    }
+    .copy-btn:hover, .cta-copy-btn:hover, .cta-btn-hero:hover {
+      transform: translateY(-1px);
+      opacity: 0.95;
+    }
+    .copy-btn {
+      background: #200b00;
+      color: #ffffff;
+      font-size: 0.95rem;
+      padding: 12px 16px;
+    }
+    .copy-status { display: block; font-size: 0.92rem; min-height: 1.2em; font-weight: 700; margin-top: 6px; color: #ffffff; }
+    [data-theme="dark"] .copy-btn { background: var(--accent); color: #0f131a; }
 
-/* 🖥️ Passage en 2 colonnes côte à côte sur Desktop */
-@media (min-width: 768px) {
-  .hero-methods {
-    flex-direction: row;
-    max-width: 1100px;
-    gap: 32px;
-    align-items: stretch;
-  }
-  .hero-methods > div {
-    flex: 1;
-  }
-}
+    main { padding: 52px 0; }
+    section { margin-bottom: 56px; }
+    section h2 { font-size: 1.55rem; font-weight: 800; margin-bottom: 20px; color: var(--text); }
+    section p { margin-bottom: 14px; color: var(--text-soft); }
 
-/* Mode Sombre pour les textes sous images */
-[data-theme="dark"] .hero-methods p {
-  color: var(--text-soft) !important;
-}
+    .summary-box {
+      background: var(--surface-soft);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 32px;
+    }
+    .summary-box h2 { font-size: 1.15rem; margin-bottom: 8px; }
 
-/* 📱 Correctif ciblé pour iPhone / Mobile (écrans étroits) */
-@media (max-width: 480px) {
-  .input-copy-group {
-    flex-direction: column;
-    background: transparent !important;
-    border: none !important;
-    padding: 0;
-    gap: 8px;
-  }
-  
-  .input-copy-group input[type="text"] {
-    background: var(--surface-muted) !important;
-    border: 1px solid var(--border) !important;
-    border-radius: 8px !important;
-    width: 100% !important;
-  }
-  
-  .input-copy-group .copy-btn {
-    width: 100% !important;
-    padding: 12px 16px !important;
-    border-radius: 8px !important;
-    justify-content: center;
-  }
-}
+    .glossary-box {
+      background: var(--surface-muted);
+      border-radius: 8px;
+      padding: 16px 20px;
+      font-size: 0.92rem;
+      color: var(--text-soft);
+      margin-top: 24px;
+    }
 
-/* ==========================================================================
-   2. RESTE DE LA MISE EN PAGE STABLE
-   ========================================================================== */
-.copy-btn, .cta-copy-btn, .cta-btn-hero { 
-  border: 0; 
-  cursor: pointer; 
-  font-weight: 800; 
-  border-radius: 24px; 
-  transition: transform 0.15s, background 0.15s; 
-}
-.copy-btn:hover, .cta-copy-btn:hover, .cta-btn-hero:hover { 
-  transform: translateY(-1px); 
-  opacity: 0.95; 
-}
-.copy-btn { 
-  background: #200b00; 
-  color: #ffffff; 
-  font-size: 0.95rem; 
-  padding: 12px 16px; 
-}
-.copy-status { display: block; font-size: 0.92rem; min-height: 1.2em; font-weight: 700; margin-top: 6px; color: #ffffff; }
+    .warning {
+      background: var(--warning-bg);
+      border-left: 4px solid var(--warning-border);
+      padding: 14px 20px;
+      font-size: 0.95rem;
+      color: var(--warning-text);
+      margin: 32px 0;
+      border-radius: 0 6px 6px 0;
+    }
 
-[data-theme="dark"] .copy-btn { background: var(--accent); color: #0f131a; }
+    .section-label {
+      display: inline-block;
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      color: #b84a00;
+      background: rgba(255, 102, 0, 0.08);
+      padding: 4px 12px;
+      border-radius: 12px;
+      margin-bottom: 8px;
+    }
+    [data-theme="dark"] .section-label {
+      color: #ff9a52;
+      background: rgba(255, 122, 26, 0.15);
+    }
 
-main { padding: 52px 0; }
-section { margin-bottom: 56px; }
-section h2 { font-size: 1.55rem; font-weight: 800; margin-bottom: 20px; color: var(--text); }
-section p { margin-bottom: 14px; color: var(--text-soft); }
+    .steps { list-style: none; counter-reset: steps; }
+    .steps li { counter-increment: steps; display: flex; gap: 18px; margin-bottom: 24px; }
+    .steps li::before {
+      content: counter(steps);
+      min-width: 36px; height: 36px;
+      background: var(--accent); color: #ffffff; font-weight: 800; font-size: 1rem;
+      border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;
+    }
+    .steps li h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 4px; color: var(--text); }
+    .steps li p { margin: 0; color: var(--text-soft); }
 
-.summary-box {
-  background: var(--surface-soft);
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 20px;
-  margin-bottom: 32px;
-}
-.summary-box h2 { font-size: 1.15rem; margin-bottom: 8px; }
+    code { font-family: "Courier New", Courier, monospace; background: var(--surface-soft); color: var(--accent-dark); padding: 2px 8px; border-radius: 4px; font-size: 0.97em; font-weight: 700; border: 1px solid var(--border); }
 
-.glossary-box {
-  background: var(--surface-muted);
-  border-radius: 8px;
-  padding: 16px 20px;
-  font-size: 0.92rem;
-  color: var(--text-soft);
-  margin-top: 24px;
-}
+    .table-wrap { overflow-x: auto; margin-top: 16px; border: 1px solid var(--border); border-radius: 8px; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.97rem; background: var(--surface); }
+    thead tr { background: var(--accent); color: #ffffff; }
+    thead th { padding: 12px 16px; text-align: left; font-weight: 700; color: #ffffff; }
+    tbody tr:nth-child(even) { background: var(--surface-soft); }
+    tbody td { padding: 11px 16px; border-bottom: 1px solid var(--border-soft); color: var(--text-soft); }
 
-.warning {
-  background: var(--warning-bg);
-  border-left: 4px solid var(--warning-border);
-  padding: 14px 20px;
-  font-size: 0.95rem;
-  color: var(--warning-text);
-  margin: 32px 0;
-  border-radius: 0 6px 6px 0;
-}
+    .badge-best { background: var(--accent); color: #ffffff; font-size: 0.72rem; font-weight: 700; padding: 2px 7px; border-radius: 20px; margin-left: 6px; }
 
-.section-label { 
-  display: inline-block; 
-  text-transform: uppercase; 
-  font-size: 0.75rem; 
-  font-weight: 700; 
-  letter-spacing: 0.12em; 
-  color: #b84a00; 
-  background: rgba(255, 102, 0, 0.08);
-  padding: 4px 12px;
-  border-radius: 12px;
-  margin-bottom: 8px; 
-}
-[data-theme="dark"] .section-label {
-  color: #ff9a52;
-  background: rgba(255, 122, 26, 0.15);
-}
+    .advantages { list-style: none; display: grid; gap: 12px; }
+    .advantages li { display: flex; align-items: flex-start; gap: 12px; padding: 14px 18px; border: 1px solid var(--border-soft); border-radius: 8px; background: var(--surface-soft); color: var(--text-soft); }
+    .advantages li .icon { font-size: 1.3rem; flex-shrink: 0; }
 
-.steps { list-style: none; counter-reset: steps; }
-.steps li { counter-increment: steps; display: flex; gap: 18px; margin-bottom: 24px; }
-.steps li::before {
-  content: counter(steps);
-  min-width: 36px; height: 36px;
-  background: var(--accent); color: #ffffff; font-weight: 800; font-size: 1rem;
-  border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;
-}
-.steps li h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 4px; color: var(--text); }
-.steps li p { margin: 0; color: var(--text-soft); }
+    .faq { display: grid; gap: 16px; }
+    details { border: 1px solid var(--border); border-radius: 8px; overflow: hidden; background: var(--surface); }
+    summary {
+      font-weight: 700; padding: 16px 20px; cursor: pointer; list-style: none;
+      display: flex; justify-content: space-between; align-items: center;
+      background: var(--surface-soft); color: var(--text);
+    }
+    /* supprime le marqueur natif Safari pour éviter le double chevron */
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "+"; font-size: 1.4rem; color: var(--accent); }
+    details[open] summary::after { content: "−"; }
+    details[open] summary { border-bottom: 1px solid var(--border); }
+    .faq-body { padding: 16px 20px; font-size: 0.97rem; color: var(--text-soft); background: var(--surface); }
 
-code { font-family: "Courier New", Courier, monospace; background: var(--surface-soft); color: var(--accent-dark); padding: 2px 8px; border-radius: 4px; font-size: 0.97em; font-weight: 700; border: 1px solid var(--border); }
+    .cta-section {
+      background: linear-gradient(135deg, var(--accent) 0%, #ff8f3d 100%);
+      color: #ffffff; text-align: center; padding: 52px 20px;
+      border-radius: 12px; margin-bottom: 40px; box-shadow: var(--shadow);
+    }
+    .cta-section h2, .cta-section p { color: #ffffff; }
+    .cta-section h2 { font-size: 1.6rem; margin-bottom: 12px; }
+    .cta-section p { opacity: 0.95; margin-bottom: 24px; font-size: 1.05rem; }
 
-.table-wrap { overflow-x: auto; margin-top: 16px; border: 1px solid var(--border); border-radius: 8px; }
-table { width: 100%; border-collapse: collapse; font-size: 0.97rem; background: var(--surface); }
-thead tr { background: var(--accent); color: #ffffff; }
-thead th { padding: 12px 16px; text-align: left; font-weight: 700; color: #ffffff; }
-tbody tr:nth-child(even) { background: var(--surface-soft); }
-tbody td { padding: 11px 16px; border-bottom: 1px solid var(--border-soft); color: var(--text-soft); }
+    .cta-btn-hero {
+      display: inline-block;
+      background: #ffffff;
+      color: var(--accent);
+      font-size: 1.1rem;
+      padding: 16px 40px;
+      box-shadow: var(--shadow);
+      text-decoration: none;
+    }
+    .cta-btn-hero:hover { background: var(--surface-soft); text-decoration: none; }
 
-.badge-best { background: var(--accent); color: #ffffff; font-size: 0.72rem; font-weight: 700; padding: 2px 7px; border-radius: 20px; margin-left: 6px; }
+    .cta-code-row { margin-top: 16px; display: flex; justify-content: center; align-items: center; gap: 10px; flex-wrap: wrap; }
+    .cta-code-pill { display: inline-block; background: #ffffff; color: var(--accent); font-family: "Courier New", Courier, monospace; font-weight: 900; letter-spacing: 0.04em; padding: 10px 14px; border-radius: 8px; }
+    .cta-copy-btn { background: rgba(255,255,255,0.18); color: #ffffff; padding: 10px 14px; font-size: 0.95rem; }
+    .cta-section .copy-status { color: #ffffff; }
 
-.advantages { list-style: none; display: grid; gap: 12px; }
-.advantages li { display: flex; align-items: flex-start; gap: 12px; padding: 14px 18px; border: 1px solid var(--border-soft); border-radius: 8px; background: var(--surface-soft); color: var(--text-soft); }
-.advantages li .icon { font-size: 1.3rem; flex-shrink: 0; }
+    .transparency { background: var(--surface-soft); border-radius: 8px; padding: 16px 20px; font-size: 0.9rem; color: var(--text-soft); margin-top: 16px; border: 1px solid var(--border); }
+    footer { border-top: 1px solid var(--border); padding: 28px 20px; text-align: center; font-size: 0.85rem; color: var(--muted); }
 
-.faq { display: grid; gap: 16px; }
-details { border: 1px solid var(--border); border-radius: 8px; overflow: hidden; background: var(--surface); }
-summary { font-weight: 700; padding: 16px 20px; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; background: var(--surface-soft); color: var(--text); }
-summary::after { content: "+"; font-size: 1.4rem; color: var(--accent); }
-details[open] summary::after { content: "−"; }
-details[open] summary { border-bottom: 1px solid var(--border); }
-.faq-body { padding: 16px 20px; font-size: 0.97rem; color: var(--text-soft); background: var(--surface); }
+    @media (max-width: 640px) {
+      .topbar-inner { padding: 14px 20px; }
+      .nav { gap: 12px; }
+    }
+    @media (min-width: 768px) { body { font-size: 19px; } }
+  </style>
 
-.cta-section { background: linear-gradient(135deg, var(--accent) 0%, #ff8f3d 100%); color: #ffffff; text-align: center; padding: 52px 20px; border-radius: 12px; margin-bottom: 40px; box-shadow: var(--shadow); }
-.cta-section h2, .cta-section p { color: #ffffff; }
-.cta-section h2 { font-size: 1.6rem; margin-bottom: 12px; }
-.cta-section p { opacity: 0.95; margin-bottom: 24px; font-size: 1.05rem; }
-
-.cta-btn-hero { 
-  display: inline-block; 
-  background: #ffffff; 
-  color: var(--accent); 
-  font-size: 1.1rem; 
-  padding: 16px 40px; 
-  box-shadow: var(--shadow); 
-  text-decoration: none; 
-}
-.cta-btn-hero:hover { background: var(--surface-soft); text-decoration: none; }
-
-.cta-code-row { margin-top: 16px; display: flex; justify-content: center; align-items: center; gap: 10px; flex-wrap: wrap; }
-.cta-code-pill { display: inline-block; background: #ffffff; color: var(--accent); font-family: "Courier New", Courier, monospace; font-weight: 900; letter-spacing: 0.04em; padding: 10px 14px; border-radius: 8px; }
-.cta-copy-btn { background: rgba(255,255,255,0.18); color: #ffffff; padding: 10px 14px; font-size: 0.95rem; }
-.cta-section .copy-status { color: #ffffff; }
-
-.transparency { background: var(--surface-soft); border-radius: 8px; padding: 16px 20px; font-size: 0.9rem; color: var(--text-soft); margin-top: 16px; border: 1px solid var(--border); }
-footer { border-top: 1px solid var(--border); padding: 28px 20px; text-align: center; font-size: 0.85rem; color: var(--muted); }
-
-@media (max-width: 640px) {
-  .topbar-inner { padding: 14px 20px; }
-  .nav { gap: 12px; }
-}
-
-@media (min-width: 768px) {
-  body { font-size: 19px; }
-}
-</style>
-  
+  <!-- script thème déplacé juste avant </head> -->
+  <script>
+    try {
+      let theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+    } catch (e) {
+      document.documentElement.setAttribute('data-theme', 'light');
+    }
+  </script>
 </head>
 <body>
 
@@ -505,315 +503,308 @@ footer { border-top: 1px solid var(--border); padding: 28px 20px; text-align: ce
         <a href="https://cashinstinct.github.io/ebox-referral-code-2026/">EBOX</a>
         <a href="https://cashinstinct.github.io/stickermule/fr/">Sticker Mule</a>
         <a class="active" href="https://cashinstinct.github.io/tangerine-orange-key/">Tangerine</a>
-        <button id="theme-toggle" class="theme-btn" type="button" aria-label="Toggle theme">🌙</button>
+        <!-- aria-label en français avec état dynamique -->
+        <button id="theme-toggle" class="theme-btn" type="button" aria-label="Activer le mode sombre" aria-pressed="false">🌙</button>
       </div>
     </div>
   </nav>
 
- <header class="hero" style="background: var(--accent); color: #ffffff; padding: 64px 20px; text-align: center;">
-  <div class="container">
-    <h1 style="font-size: clamp(1.8rem, 4.5vw, 2.6rem); font-weight: 900; line-height: 1.2; margin-bottom: 16px;">
-      50 $ offerts à l'ouverture de votre compte Tangerine
-    </h1>
-    <p style="font-size: 1.15rem; opacity: 0.95; max-width: 620px; margin: 0 auto 28px;">
-      Entrez la Clé Orange <strong>14130944S1</strong> à la première étape de votre inscription pour recevoir votre prime de bienvenue.
-    </p>
-    <div class="hero-methods">
+  <header class="hero" style="background: var(--accent); color: #ffffff; padding: 64px 20px; text-align: center;">
+    <div class="container">
+      <h1 style="font-size: clamp(1.8rem, 4.5vw, 2.6rem); font-weight: 900; line-height: 1.2; margin-bottom: 16px;">
+        50 $ offerts à l'ouverture de votre compte Tangerine
+      </h1>
+      <p style="font-size: 1.15rem; opacity: 0.95; max-width: 620px; margin: 0 auto 28px;">
+        Entrez la Clé Orange <strong>14130944S1</strong> à la première étape de votre inscription pour recevoir votre prime de bienvenue.
+      </p>
 
-<div style="background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 24px 20px; box-shadow: var(--shadow);">
-  <p style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent); margin-bottom: 12px;">
-    ① Étape 1 — Copier la clé de parrainage
-  </p>
-  
-  <div class="input-copy-group" style="display: flex; background: var(--surface-soft); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; margin: 16px 0; padding: 4px;">
-    <input type="text" value="14130944S1" id="promo-code" readonly aria-readonly="true" aria-label="Clé Orange Tangerine" style="flex: 1; border: none; padding: 12px 16px; font-family: monospace; font-size: 1.1rem; font-weight: 700; color: var(--text); background: transparent; text-align: center;" />
-    <button id="copy-btn" class="copy-btn" data-copy="14130944S1" data-target="copyStatusHero" type="button" style="background: var(--text); color: var(--surface); border: none; border-radius: 6px; font-weight: 700; padding: 0 20px; cursor: pointer; font-size: 0.95rem; white-space: nowrap;">Copier la clé</button>
-  </div>
-  <span id="copyStatusHero" role="status" aria-atomic="true" aria-live="polite" style="display: none;"></span>
+      <div class="hero-methods">
 
-  <p style="font-size: 0.85rem; margin-top: auto; text-align: center; color: var(--text-soft);">
-    Cliquez sur copier, puis passez à l'étape 2 pour lancer votre inscription.
-  </p>
-</div>
+        <div style="background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 24px 20px; box-shadow: var(--shadow);">
+          <p style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent); margin-bottom: 12px;">
+            ① Étape 1 — Copier la clé de parrainage
+          </p>
+          <div class="input-copy-group" style="display: flex; background: var(--surface-soft); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; margin: 16px 0; padding: 4px;">
+            <input type="text" value="14130944S1" id="promo-code" readonly aria-readonly="true" aria-label="Clé Orange Tangerine" style="flex: 1; border: none; padding: 12px 16px; font-family: monospace; font-size: 1.1rem; font-weight: 700; color: var(--text); background: transparent; text-align: center;" />
+            <button id="copy-btn" class="copy-btn" data-copy="14130944S1" data-target="copyStatusHero" type="button" style="background: var(--text); color: var(--surface); border: none; border-radius: 6px; font-weight: 700; padding: 0 20px; cursor: pointer; font-size: 0.95rem; white-space: nowrap;">Copier la clé</button>
+          </div>
+          <span id="copyStatusHero" role="status" aria-atomic="true" aria-live="polite" style="display: none;"></span>
+          <p style="font-size: 0.85rem; margin-top: auto; text-align: center; color: var(--text-soft);">
+            Cliquez sur copier, puis passez à l'étape 2 pour lancer votre inscription.
+          </p>
+        </div>
 
-      <div style="background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 24px 20px; box-shadow: var(--shadow);">
-        <p style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin-bottom: 12px;">
-          ② Étape 2 — Insérer dans le formulaire Tangerine
-        </p>
-        
-        <a href="https://www.tangerine.ca/app/#/visitor-enroll/profile-setup?products=4000&locale=fr_CA&id=hp-banner" target="_blank" rel="noopener" style="display: block; transition: opacity 0.15s ease; margin-top: auto;">
-          <img src="images/Champ-entrez-cle-orange-Tangerine.webp"
-               alt="Formulaire d'inscription Tangerine montrant l'emplacement exact du champ Clé Orange"
-               width="520" height="150"
-               style="border-radius: 8px; border: 1px solid var(--border-soft); box-shadow: var(--shadow); width: 100%; height: auto;" />
-        </a>
-        
-        <p style="font-size: 0.85rem; margin-top: 8px; text-align: center; color: var(--text-soft);">
-          <a href="https://www.tangerine.ca/app/#/visitor-enroll/profile-setup?products=4000&locale=fr_CA&id=hp-banner" target="_blank" rel="noopener" style="text-decoration: underline; font-weight: 700;">Cliquez ici pour ouvrir le formulaire officiel</a> et collez le code.
-        </p>
+        <div style="background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 24px 20px; box-shadow: var(--shadow);">
+          <p style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin-bottom: 12px;">
+            ② Étape 2 — Insérer dans le formulaire Tangerine
+          </p>
+          <a href="https://www.tangerine.ca/app/#/visitor-enroll/profile-setup?products=4000&locale=fr_CA&id=hp-banner" target="_blank" rel="noopener" style="display: block; transition: opacity 0.15s ease; margin-top: auto;">
+            <img src="images/Champ-entrez-cle-orange-Tangerine.webp"
+                 alt="Formulaire d'inscription Tangerine montrant l'emplacement exact du champ Clé Orange"
+                 width="520" height="150"
+                 style="border-radius: 8px; border: 1px solid var(--border-soft); box-shadow: var(--shadow); width: 100%; height: auto;" />
+          </a>
+          <p style="font-size: 0.85rem; margin-top: 8px; text-align: center; color: var(--text-soft);">
+            <a href="https://www.tangerine.ca/app/#/visitor-enroll/profile-setup?products=4000&locale=fr_CA&id=hp-banner" target="_blank" rel="noopener" style="text-decoration: underline; font-weight: 700;">Cliquez ici pour ouvrir le formulaire officiel</a> et collez le code.
+          </p>
+        </div>
+
       </div>
 
+      <p style="font-size:0.9rem; opacity:0.9; margin-top: 20px; margin-bottom: 0; color: #ffffff;">⚠️ Clé orange à saisir pendant l'inscription — Ne peut pas être ajouté après coup.</p>
     </div>
-
-    <p style="font-size:0.9rem; opacity:0.9; margin-top: 20px; margin-bottom: 0; color: #ffffff;">⚠️ Clé orange à saisir pendant l'inscription — Ne peut pas être ajouté après coup.</p>
-  </div>
-</header>
+  </header>
 
   <main>
     <div class="container">
-      
-    <div class="prose">
-      
-      <nav class="breadcrumb" aria-label="Fil d'Ariane">
-        <a href="https://cashinstinct.github.io/">Accueil</a><span>&gt;</span>
-        <a href="https://cashinstinct.github.io/#finances">Banques en ligne</a><span>&gt;</span>
-        Tangerine Clé Orange
-      </nav>
+      <div class="prose">
 
-      <article class="summary-box" aria-label="Résumé rapide de l'offre">
-        <h2>Résumé rapide de l'offre d'inscription</h2>
-        <p>La <strong>Clé Orange Tangerine 14130944S1</strong> permet d'obtenir un bonus de bienvenue de 50 $ CAD lors de l'ouverture d'un premier compte-chèques ou compte d'épargne admissible au Canada. Pour valider l'offre, le nouvel utilisateur doit inscrire le code parrain 14130944S1 au cours du processus d'inscription, effectuer un dépôt initial d'un montant minimum de 250 $ CAD dans les 30 jours, puis maintenir ce solde pendant une période minimale de 60 jours consécutifs.</p>
-      </article>
+        <nav class="breadcrumb" aria-label="Fil d'Ariane">
+          <a href="https://cashinstinct.github.io/">Accueil</a><span>&gt;</span>
+          <a href="https://cashinstinct.github.io/#finances">Banques en ligne</a><span>&gt;</span>
+          Tangerine Clé Orange
+        </nav>
 
-      <section id="comment-utiliser">
-        <span class="section-label">Comment utiliser la Clé Orange</span>
-        <h2>7 étapes pour recevoir la prime de 50 $</h2>
-        
-      <div class="warning">
-     ⚠️ <strong>Astuce d'optimisation (Jusqu'à 300 $ de prime) :</strong> La prime de parrainage de 50 $ (via la Clé Orange) est déclenchée par un simple dépôt. En parallèle, l'offre de 250 $ liée au dépôt de paie <strong>ne nécessite aucun code promotionnel</strong>. Le champ d'inscription reste donc libre pour utiliser la Clé Orange <code>14130944S1</code> et maximiser vos bonus de départ !
-     </div>
+        <article class="summary-box" aria-label="Résumé rapide de l'offre">
+          <h2>Résumé rapide de l'offre d'inscription</h2>
+          <p>La <strong>Clé Orange Tangerine 14130944S1</strong> permet d'obtenir un bonus de bienvenue de 50 $ CAD lors de l'ouverture d'un premier compte-chèques ou compte d'épargne admissible au Canada. Pour valider l'offre, le nouvel utilisateur doit inscrire le code parrain 14130944S1 au cours du processus d'inscription, effectuer un dépôt initial d'un montant minimum de 250 $ CAD dans les 30 jours, puis maintenir ce solde pendant une période minimale de 60 jours consécutifs.</p>
+        </article>
 
-        <ol class="steps">
-          <li>
-            <div>
-              <h3>Rendez-vous sur Tangerine.ca</h3>
-              <p>Allez sur <a href="https://www.tangerine.ca/app/#/visitor-enroll/profile-setup?products=4000&locale=fr_CA&id=hp-banner" target="_blank" rel="noopener">tangerine.ca</a> et cliquez sur <strong>« Ouvrir un compte »</strong>.</p>
-            </div>
-          </li>
-         <li>
-            <div>
-              <h3>Entrez la Clé Orange</h3>
-              <p>À la <strong>première étape</strong> du formulaire, saisissez <code>14130944S1</code> dans le champ <strong style="white-space: nowrap;">« Entrez une Clé Orange »</strong>.</p>
-            </div>
-          </li>
-          <li>
-            <div>
-              <h3>Choisissez votre type de compte</h3>
-              <p>Sélectionnez un compte-chèques (sans frais) ou un compte d'épargne. La prime de 50 $ s'applique.</p>
-            </div>
-          </li>
-          <li>
-            <div>
-              <h3>Complétez votre profil</h3>
-              <p>Remplissez vos informations personnelles et validez votre identité.</p>
-            </div>
-          </li>
-          <li>
-            <div>
-              <h3>Vérifiez le résumé</h3>
-              <p>Assurez-vous que la prime apparaît dans le résumé de votre demande avant de confirmer.</p>
-            </div>
-          </li>
-          <li>
-            <div>
-              <h3>Déposez 250 $ CAD</h3>
-              <p>Dans les 30 jours, effectuez un dépôt initial de <strong>250 $ CAD</strong> et maintenez ce solde pendant <strong>60 jours consécutifs</strong>.</p>
-            </div>
-          </li>
-          <li>
-            <div>
-              <h3>Recevez votre prime</h3>
-              <p>Tangerine crédite automatiquement <strong>50 $ CAD</strong> dans votre compte dans les 30 jours suivant la période de maintien.</p>
-            </div>
-          </li>
-        </ol>
-      </section>
+        <section id="comment-utiliser">
+          <span class="section-label">Comment utiliser la Clé Orange</span>
+          <h2>7 étapes pour recevoir la prime de 50 $</h2>
 
-      <section id="experience-vecue">
-        <span class="section-label">Retour d'expérience</span>
-        <h2>Mon utilisation de la Clé Orange Tangerine</h2>
-        <p>J'ai personnellement configuré mon premier compte-chèques Banque Tangerine en utilisant un protocole de parrainage. Le versement de la prime est entièrement géré de manière algorithmique par le système informatique de Tangerine : dès que le cap des 60 jours consécutifs avec un solde maintenu au-dessus de 250 $ a été franchi, le montant de 50 $ a été versé directement dans mon tableau de bord sans aucune action requise.</p>
-        <p><strong>Est-ce que Tangerine est préférable à une banque traditionnelle au Québec ?</strong> Pour des besoins bancaires courants, la gratuité des transactions, l'absence totale de frais mensuels et l'accès illimité aux guichets automatiques de la Banque Scotia en font une solution nettement plus rentable que les forfaits payants des institutions classiques.</p>
-      </section>
+          <div class="warning">
+            ⚠️ <strong>Astuce d'optimisation (Jusqu'à 300 $ de prime) :</strong> La prime de parrainage de 50 $ (via la Clé Orange) est déclenchée par un simple dépôt. En parallèle, l'offre de 250 $ liée au dépôt de paie <strong>ne nécessite aucun code promotionnel</strong>. Le champ d'inscription reste donc libre pour utiliser la Clé Orange <code>14130944S1</code> et maximiser vos bonus de départ !
+          </div>
 
-      <section id="fiabilite-tangerine">
-        <span class="section-label">Banque en ligne fiable</span>
-        <h2>Qui est Tangerine ?</h2>
-        <p>Tangerine est une banque numérique canadienne détenue par la Banque Scotia. Elle permet d’ouvrir et de gérer ses comptes entièrement en ligne, avec une expérience simple et des frais réduits. Les dépôts admissibles sont protégés par la Société d’assurance-dépôts du Canada (SADC).</p>
-      </section>
+          <ol class="steps">
+            <li>
+              <div>
+                <h3>Rendez-vous sur Tangerine.ca</h3>
+                <p>Allez sur <a href="https://www.tangerine.ca/app/#/visitor-enroll/profile-setup?products=4000&locale=fr_CA&id=hp-banner" target="_blank" rel="noopener">tangerine.ca</a> et cliquez sur <strong>« Ouvrir un compte »</strong>.</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h3>Entrez la Clé Orange</h3>
+                <p>À la <strong>première étape</strong> du formulaire, saisissez <code>14130944S1</code> dans le champ <strong style="white-space: nowrap;">« Entrez une Clé Orange »</strong>.</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h3>Choisissez votre type de compte</h3>
+                <p>Sélectionnez un compte-chèques (sans frais) ou un compte d'épargne. La prime de 50 $ s'applique.</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h3>Complétez votre profil</h3>
+                <p>Remplissez vos informations personnelles et validez votre identité.</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h3>Vérifiez le résumé</h3>
+                <p>Assurez-vous que la prime apparaît dans le résumé de votre demande avant de confirmer.</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h3>Déposez 250 $ CAD</h3>
+                <p>Dans les 30 jours, effectuez un dépôt initial de <strong>250 $ CAD</strong> et maintenez ce solde pendant <strong>60 jours consécutifs</strong>.</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h3>Recevez votre prime</h3>
+                <p>Tangerine crédite automatiquement <strong>50 $ CAD</strong> dans votre compte dans les 30 jours suivant la période de maintien.</p>
+              </div>
+            </li>
+          </ol>
+        </section>
 
-      <section id="comptes">
-        <span class="section-label">Comptes disponibles</span>
-        <h2>Choisissez votre compte Tangerine</h2>
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr>
-                <th>Compte</th>
-                <th>Frais mensuels</th>
-                <th>Idéal pour</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Compte-chèques <span class="badge-best">Populaire</span></td>
-                <td>0 $</td>
-                <td>Transactions quotidiennes, virements Interac illimités</td>
-              </tr>
-              <tr>
-                <td>Compte d'épargne</td>
-                <td>0 $</td>
-                <td>Épargne à court terme, fonds d'urgence</td>
-              </tr>
-              <tr>
-                <td>CELI / REER</td>
-                <td>0 $</td>
-                <td>Épargne à l'abri de l'impôt ou retraite</td>
-              </tr>
-            </tbody>
-          </table>
+        <section id="experience-vecue">
+          <span class="section-label">Retour d'expérience</span>
+          <h2>Mon utilisation de la Clé Orange Tangerine</h2>
+          <p>J'ai personnellement configuré mon premier compte-chèques Banque Tangerine en utilisant un protocole de parrainage. Le versement de la prime est entièrement géré de manière algorithmique par le système informatique de Tangerine : dès que le cap des 60 jours consécutifs avec un solde maintenu au-dessus de 250 $ a été franchi, le montant de 50 $ a été versé directement dans mon tableau de bord sans aucune action requise.</p>
+          <p><strong>Est-ce que Tangerine est préférable à une banque traditionnelle au Québec ?</strong> Pour des besoins bancaires courants, la gratuité des transactions, l'absence totale de frais mensuels et l'accès illimité aux guichets automatiques de la Banque Scotia en font une solution nettement plus rentable que les forfaits payants des institutions classiques.</p>
+        </section>
+
+        <section id="fiabilite-tangerine">
+          <span class="section-label">Banque en ligne fiable</span>
+          <h2>Qui est Tangerine ?</h2>
+          <p>Tangerine est une banque numérique canadienne détenue par la Banque Scotia. Elle permet d'ouvrir et de gérer ses comptes entièrement en ligne, avec une expérience simple et des frais réduits. Les dépôts admissibles sont protégés par la Société d'assurance-dépôts du Canada (SADC).</p>
+        </section>
+
+        <section id="comptes">
+          <span class="section-label">Comptes disponibles</span>
+          <h2>Choisissez votre compte Tangerine</h2>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Compte</th>
+                  <th>Frais mensuels</th>
+                  <th>Idéal pour</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Compte-chèques <span class="badge-best">Populaire</span></td>
+                  <td>0 $</td>
+                  <td>Transactions quotidiennes, virements Interac illimités</td>
+                </tr>
+                <tr>
+                  <td>Compte d'épargne</td>
+                  <td>0 $</td>
+                  <td>Épargne à court terme, fonds d'urgence</td>
+                </tr>
+                <tr>
+                  <td>CELI / REER</td>
+                  <td>0 $</td>
+                  <td>Épargne à l'abri de l'impôt ou retraite</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section id="avantages">
+          <span class="section-label">Ce que vous obtenez</span>
+          <h2>Avantages inclus avec Tangerine</h2>
+          <ul class="advantages">
+            <li><span class="icon">💵</span><div><strong>Prime de 50 $ CAD</strong> — créditée automatiquement grâce au parrainage.</div></li>
+            <li><span class="icon">🏦</span><div><strong>Compte-chèques sans frais</strong> — aucuns frais mensuels, transactions illimitées.</div></li>
+            <li><span class="icon">💳</span><div><strong>Carte de débit Interac</strong> — acceptée partout.</div></li>
+            <li><span class="icon">📲</span><div><strong>Virements Interac gratuits</strong> — envoyer et recevoir de l'argent sans frais.</div></li>
+            <li><span class="icon">🇨🇦</span><div><strong>Service en français</strong> — site, appli et service client disponibles en français.</div></li>
+          </ul>
+        </section>
+
+        <section id="faq">
+          <span class="section-label">Questions fréquentes</span>
+          <h2>Questions supplémentaires</h2>
+          <div class="faq">
+            <details>
+              <summary>Combien de temps faut-il pour recevoir la prime de 50 $ ?</summary>
+              <div class="faq-body">
+                <p>Après avoir maintenu un solde de 250 $ pendant 60 jours consécutifs, la banque Tangerine crédite la prime de <strong>50 $ CAD</strong> dans votre compte dans les <strong>30 jours suivants</strong>. Le délai général d'attribution est d'environ 3 mois après l'inscription.</p>
+              </div>
+            </details>
+            <details>
+              <summary>Qu'est-ce qu'une Cle Orange ou Clé Orange Tangerine ?</summary>
+              <div class="faq-body">
+                <p>Que vous l'écriviez avec ou sans accent (Cle Orange ou Clé Orange), il s'agit du terme officiel utilisé par la banque Tangerine pour désigner son code de parrainage. Entrer le code <code>14130944S1</code> permet de déclencher l'attribution de la prime de bienvenue.</p>
+              </div>
+            </details>
+            <details>
+              <summary>Est-ce que l'offre Tangerine est disponible au Québec ?</summary>
+              <div class="faq-body">
+                <p>Oui. La banque Tangerine offre l'ensemble de ses services bancaires en ligne dans toutes les provinces canadiennes, y compris le Québec. L'application mobile et le support technique téléphonique sont entièrement gérés en français.</p>
+              </div>
+            </details>
+            <details>
+              <summary>La Clé Orange (50 $) est-elle cumulable avec la prime de dépôt de paie (250 $) et les offres d'épargne ?</summary>
+              <div class="faq-body">
+                <p>Mécaniquement, oui ! L'offre de paie de 250 $ pour un compte-chèques s'active par vos comportements bancaires (sans code), ce qui laisse le champ libre pour entrer la Clé Orange <code>14130944S1</code> à l'inscription. De plus, la Clé Orange s'applique sur les comptes de base et cohabite généralement avec les taux d'intérêt promotionnels temporaires sur l'épargne. (Note : Tangerine précise que l'offre de paie ne se combine pas à d'autres primes <em>de compte-chèques</em>, mais la Clé Orange est une prime d'acquisition globale).</p>
+              </div>
+            </details>
+            <details>
+              <summary>Comment et quand obtenir la prime supplémentaire de 250 $ pour un compte-chèques ?</summary>
+              <div class="faq-body">
+                <p><strong>Aucun code supplémentaire n'est requis.</strong> Une fois votre compte ouvert avec la Clé Orange, transférez votre dépôt direct de paie (salaire, pension, RE, RPC) vers votre nouveau Compte-chèques Tangerine (minimum 200 $ par mois). Le premier versement doit arriver dans les 60 jours suivant l'ouverture. Une fois ces dépôts maintenus pendant deux mois consécutifs, le système versera automatiquement les 250 $ au cours du mois suivant.</p>
+              </div>
+            </details>
+            <details>
+              <summary>Quels sont les codes d'institution de Tangerine pour transférer ma paie ?</summary>
+              <div class="faq-body">
+                <p>Pour acheminer vos dépôts directs de paie ou configurer un prélèvement automatique, votre employeur ou fournisseur aura besoin des coordonnées bancaires officielles de Tangerine : <strong>Numéro d'institution : 614</strong> et <strong>Numéro de transit : 00152</strong>. Votre numéro de compte personnel est accessible dans les détails de votre profil sur l'application mobile.</p>
+              </div>
+            </details>
+          </div>
+        </section>
+
+        <div class="cta-section">
+          <h2>Prêt à ouvrir votre compte ?</h2>
+          <p>Cliquez ci-dessous, entrez la Clé Orange <strong>14130944S1</strong> à la première étape et recevez votre prime de 50 $.</p>
+          <a class="cta-btn-hero" href="https://www.tangerine.ca/app/#/visitor-enroll/instructions?locale=fr_CA" target="_blank" rel="noopener">
+            🍊 Ouvrir un compte Tangerine
+          </a>
+          <div class="cta-code-row">
+            <span class="cta-code-pill">14130944S1</span>
+            <button class="cta-copy-btn copy-btn" data-copy="14130944S1" data-target="copyStatusCta">Copier la clé</button>
+          </div>
+          <span class="copy-status" id="copyStatusCta" role="status" aria-atomic="true" aria-live="polite"></span>
         </div>
-      </section>
 
-      <section id="avantages">
-        <span class="section-label">Ce que vous obtenez</span>
-        <h2>Avantages inclus avec Tangerine</h2>
-        <ul class="advantages">
-          <li><span class="icon">💵</span><div><strong>Prime de 50 $ CAD</strong> — créditée automatiquement grâce au parrainage.</div></li>
-          <li><span class="icon">🏦</span><div><strong>Compte-chèques sans frais</strong> — aucuns frais mensuels, transactions illimitées.</div></li>
-          <li><span class="icon">💳</span><div><strong>Carte de débit Interac</strong> — acceptée partout.</div></li>
-          <li><span class="icon">📲</span><div><strong>Virements Interac gratuits</strong> — envoyer et recevoir de l'argent sans frais.</div></li>
-          <li><span class="icon">🇨🇦</span><div><strong>Service en français</strong> — site, appli et service client disponibles en français.</div></li>
-        </ul>
-      </section>
+        <article class="glossary-box" aria-label="Glossaire des expressions équivalentes">
+          <strong>Variantes de recherche courantes :</strong> Selon les conventions terminologiques du secteur bancaire canadien, l'identifiant <code>14130944S1</code> correspond indifféremment aux expressions suivantes : <em>Clé Orange Tangerine</em>, <em>cle orange tangerine</em>, <em>code de parrainage Tangerine Canada</em>, <em>code promo Tangerine</em>, <em>bonus d'inscription Tangerine Banque</em>, ou <em>référence de parrainage de l'orange key tangerine</em>. Toutes ces variantes font référence au même protocole d'activation de la prime de 50 $.
+        </article>
 
-      <section id="faq">
-        <span class="section-label">Questions fréquentes</span>
-        <h2>Questions supplémentaires</h2>
-        <div class="faq">
-          <details>
-            <summary>Combien de temps faut-il pour recevoir la prime de 50 $ ?</summary>
-            <div class="faq-body">
-              <p>Après avoir maintenu un solde de 250 $ pendant 60 jours consécutifs, la banque Tangerine crédite la prime de <strong>50 $ CAD</strong> dans votre compte dans les <strong>30 jours suivants</strong>. Le délai général d'attribution est d'environ 3 mois après l'inscription.</p>
-            </div>
-          </details>
-
-          <details>
-            <summary>Qu'est-ce qu'une Cle Orange ou Clé Orange Tangerine ?</summary>
-            <div class="faq-body">
-              <p>Que vous l'écriviez avec ou sans accent (Cle Orange ou Clé Orange), il s'agit du terme officiel utilisé par la banque Tangerine pour désigner son code de parrainage. Entrer le code <code>14130944S1</code> permet de déclencher l'attribution de la prime de bienvenue.</p>
-            </div>
-          </details>
-
-          <details>
-            <summary>Est-ce que l'offre Tangerine est disponible au Québec ?</summary>
-            <div class="faq-body">
-              <p>Oui. La banque Tangerine offre l'ensemble de ses services bancaires en ligne dans toutes les provinces canadiennes, y compris le Québec. L'application mobile et le support technique téléphonique sont entièrement gérés en français.</p>
-            </div>
-          </details>
-
-          <details>
-            <summary>La Clé Orange (50 $) est-elle cumulable avec la prime de dépôt de paie (250 $) et les offres d'épargne ?</summary>
-            <div class="faq-body">
-              <p>Mécaniquement, oui ! L'offre de paie de 250 $ pour un compte-chèques s'active par vos comportements bancaires (sans code), ce qui laisse le champ libre pour entrer la Clé Orange <code>14130944S1</code> à l'inscription. De plus, la Clé Orange s'applique sur les comptes de base et cohabite généralement avec les taux d'intérêt promotionnels temporaires sur l'épargne. (Note : Tangerine précise que l'offre de paie ne se combine pas à d'autres primes <em>de compte-chèques</em>, mais la Clé Orange est une prime d'acquisition globale).</p>
-            </div>
-          </details>
-                   
-      <details>
-      <summary>Comment et quand obtenir la prime supplémentaire de 250 $ pour un compte-chèques ?</summary>
-    <div class="faq-body">
-    <p><strong>Aucun code supplémentaire n'est requis.</strong> Une fois votre compte ouvert avec la Clé Orange, transférez votre dépôt direct de paie (salaire, pension, RE, RPC) vers votre nouveau Compte-chèques Tangerine (minimum 200 $ par mois). Le premier versement doit arriver dans les 60 jours suivant l'ouverture. Une fois ces dépôts maintenus pendant deux mois consécutifs, le système versera automatiquement les 250 $ au cours du mois suivant.</p>
-    </div>
-    </details>
-          
-               <details>
-            <summary>Quels sont les codes d'institution de Tangerine pour transférer ma paie ?</summary>
-            <div class="faq-body">
-              <p>Pour acheminer vos dépôts directs de paie ou configurer un prélèvement automatique, votre employeur ou fournisseur aura besoin des coordonnées bancaires officielles de Tangerine : <strong>Numéro d'institution : 614</strong> et <strong>Numéro de transit : 00152</strong>. Votre numéro de compte personnel est accessible dans les détails de votre profil sur l'application mobile.</p>
-            </div>
-          </details>
-         
+        <div class="transparency">
+          <strong>Transparence :</strong> Si vous ouvrez un compte de Banque Tangerine avec la Clé Orange <code>14130944S1</code>, je reçois également une prime de parrainage de 50 $ en retour — Tangerine couvre ça de son côté. Votre prime de 50 $ reste entière et n'est pas affectée.
         </div>
-      </section>
 
-      <div class="cta-section">
-        <h2>Prêt à ouvrir votre compte ?</h2>
-        <p>Cliquez ci-dessous, entrez la Clé Orange <strong>14130944S1</strong> à la première étape et recevez votre prime de 50 $.</p>
-        <a class="cta-btn-hero" href="https://www.tangerine.ca/app/#/visitor-enroll/instructions?locale=fr_CA" target="_blank" rel="noopener">
-          🍊 Ouvrir un compte Tangerine
-        </a>
-
-        <div class="cta-code-row">
-          <span class="cta-code-pill">14130944S1</span>
-          <button class="cta-copy-btn copy-btn" data-copy="14130944S1" data-target="copyStatusCta">Copier la clé</button>
-        </div>
-        <span class="copy-status" id="copyStatusCta" role="status" aria-atomic="true" aria-live="polite"></span>
-      </div>
-
-      <article class="glossary-box" aria-label="Glossaire des expressions équivalentes">
-        <strong>Variantes de recherche courantes :</strong> Selon les conventions terminologiques du secteur bancaire canadien, l'identifiant <code>14130944S1</code> correspond indifféremment aux expressions suivantes : <em>Clé Orange Tangerine</em>, <em>cle orange tangerine</em>, <em>code de parrainage Tangerine Canada</em>, <em>code promo Tangerine</em>, <em>bonus d'inscription Tangerine Banque</em>, ou <em>référence de parrainage de l'orange key tangerine</em>. Toutes ces variantes font référence au même protocole d'activation de la prime de 50 $.
-      </article>
-
-      <div class="transparency">
-        <strong>Transparence :</strong> Si vous ouvrez un compte de Banque Tangerine avec la Clé Orange <code>14130944S1</code>, je reçois également une prime de parrainage de 50 $ en retour — Tangerine couvre ça de son côté. Votre prime de 50 $ reste entière et n'est pas affectée.
       </div>
     </div>
-  </div>
   </main>
 
   <footer>
     <div class="container">
       <p>Cette page est un site de référence indépendant. Elle n'est pas affiliée officiellement à la Banque Tangerine ou à la Banque Scotia.</p>
-      <p style="margin-top:6px;">Clé Orange Tangerine : <code>14130944S1</code> — Mis à jour : mai 2026</p>
+      <p style="margin-top:6px;">Clé Orange Tangerine : <code>14130944S1</code> — Mis à jour : <span id="footer-date">Juin 2026</span></p>
     </div>
   </footer>
 
   <script>
-        async function copyText(text, button, statusId) {
-      const status = document.getElementById(statusId);
-      const originalText = button.textContent;
-      const originalBg = window.getComputedStyle(button).backgroundColor;
-      const originalColor = window.getComputedStyle(button).color;
+    // Footer date dynamique en français
+    const footerDate = document.getElementById("footer-date");
+    if (footerDate) {
+      footerDate.textContent = new Date().toLocaleDateString("fr-CA", { month: "long", year: "numeric" });
+    }
+  </script>
 
+  <script>
+    // reset background à "transparent" — compatible Safari inline style
+    async function copyText(text, button, statusId) {
+      const originalText = button.textContent;
       try {
         await navigator.clipboard.writeText(text);
         button.textContent = "Copié !";
-        
-        // Style temporaire de succès adapté aux deux boutons
         button.style.background = "var(--accent)";
         button.style.color = "#ffffff";
-        
-        setTimeout(() => { 
-          button.textContent = originalText; 
-          button.style.background = "";
+        setTimeout(() => {
+          button.textContent = originalText;
+          button.style.background = "transparent";
           button.style.color = "";
         }, 2000);
       } catch (err) {
+        const status = document.getElementById(statusId);
         if (status) status.textContent = "Impossible de copier automatiquement.";
       }
     }
 
-    // Écoute tous les boutons ayant l'attribut data-copy (Haut et Bas)
     document.querySelectorAll("[data-copy]").forEach((button) => {
       button.addEventListener("click", () => {
         copyText(button.getAttribute("data-copy"), button, button.getAttribute("data-target"));
       });
     });
+  </script>
 
+  <script>
+    // aria-label dynamique en français
     const themeToggle = document.getElementById("theme-toggle");
     const root = document.documentElement;
 
     function setThemeUI(isDark) {
       themeToggle.textContent = isDark ? "☀️" : "🌙";
+      themeToggle.setAttribute("aria-label", isDark ? "Activer le mode lumineux" : "Activer le mode sombre");
       themeToggle.setAttribute("aria-pressed", isDark ? "true" : "false");
     }
 
-    if (localStorage.getItem("theme") === "dark") {
-      root.setAttribute("data-theme", "dark");
-      setThemeUI(true);
-    } else {
-      setThemeUI(false);
-    }
+    const savedTheme = localStorage.getItem("theme");
+    setThemeUI(savedTheme === "dark" || root.getAttribute("data-theme") === "dark");
 
     themeToggle.addEventListener("click", () => {
       const isDark = root.getAttribute("data-theme") === "dark";
