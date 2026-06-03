@@ -435,6 +435,48 @@
       margin: 32px 0;
       border-radius: 0 6px 6px 0;
     }
+    .yt-short-wrapper {
+  position: relative;
+  width: 315px;
+  max-width: 100%;
+  height: 560px;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  margin: 24px auto;
+  cursor: pointer;
+  background: #000;
+  display: block;
+}
+.yt-short-wrapper img {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+}
+.yt-short-wrapper .play-btn {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 68px; height: 48px;
+  background: #ff0000;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.yt-short-wrapper .play-btn::after {
+  content: '';
+  border-style: solid;
+  border-width: 11px 0 11px 22px;
+  border-color: transparent transparent transparent #fff;
+  margin-left: 4px;
+}
+.yt-short-wrapper:hover .play-btn {
+  background: #cc0000;
+}
 
     .section-label {
       display: inline-block;
@@ -527,48 +569,6 @@
     }
     @media (min-width: 768px) { body { font-size: 19px; } }
     }
-.yt-short-wrapper {
-  position: relative;
-  width: 315px;
-  max-width: 100%;
-  height: 560px;
-  overflow: hidden;
-  border-radius: 12px;
-  border: 1px solid var(--border);
-  box-shadow: var(--shadow);
-  margin: 24px auto;
-  cursor: pointer;
-  background: #000;
-  display: block;
-}
-.yt-short-wrapper img {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  object-fit: cover;
-}
-.yt-short-wrapper .play-btn {
-  position: absolute;
-  top: 50%; left: 50%;
-  transform: translate(-50%, -50%);
-  width: 68px; height: 48px;
-  background: #ff0000;
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  pointer-events: none;
-}
-.yt-short-wrapper .play-btn::after {
-  content: '';
-  border-style: solid;
-  border-width: 11px 0 11px 22px;
-  border-color: transparent transparent transparent #fff;
-  margin-left: 4px;
-}
-.yt-short-wrapper:hover .play-btn {
-  background: #cc0000;
-}
   </style>
 
   <!-- script thème déplacé juste avant </head> -->
