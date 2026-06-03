@@ -190,12 +190,28 @@
             "acceptedAnswer": {
               "@type": "Answer",
               "text": "Pour acheminer vos dépôts directs de paie, votre employeur aura besoin des coordonnées bancaires officielles de Tangerine : Numéro d'institution : 614 et Numéro de transit : 00152. Votre numéro de compte personnel est accessible dans les détails de votre profil sur l'application mobile."
-            }
-          }
-        ]
+               }
+      ]
+    },
+    {
+     "@type": "VideoObject",
+  "name": "Tutoriel Orange Key Tangerine — Code de référence",
+  "description": "Short vidéo montrant où entrer l'Orange Key Tangerine lors de l'inscription pour obtenir le bonus.",
+  "thumbnailUrl": "https://img.youtube.com/vi/ZjDvFV42qbM/maxresdefault.jpg",
+  "uploadDate": "2026-06-02T00:00:00+00:00",
+  "contentUrl": "https://www.youtube.com/shorts/ZjDvFV42qbM",
+  "embedUrl": "https://www.youtube.com/embed/ZjDvFV42qbM",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Cash Instinct",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://cashinstinct.github.io/logo.png"
+        }
       }
-    ]
-  }
+    }
+  ]
+}
   </script>
 
   <style>
@@ -510,6 +526,50 @@
       .nav { gap: 12px; }
     }
     @media (min-width: 768px) { body { font-size: 19px; } }
+    }
+.yt-lite {
+  background-color: #000;
+  position: relative;
+  display: block;
+  max-width: 315px;
+  margin: 24px auto;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  aspect-ratio: 9 / 16;
+  cursor: pointer;
+}
+.yt-lite::before {
+  content: '';
+  display: block;
+  position: absolute;
+  inset: 0;
+  background-image: url('https://img.youtube.com/vi/SAaPDiqfLJk/maxresdefault.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.yt-lite .play-btn {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 68px; height: 48px;
+  background: #ff0000;
+  border-radius: 12px;
+  display: flex; align-items: center; justify-content: center;
+}
+.yt-lite .play-btn::after {
+  content: '';
+  border-style: solid;
+  border-width: 11px 0 11px 22px;
+  border-color: transparent transparent transparent #fff;
+  margin-left: 4px;
+}
+.yt-lite iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%; height: 100%;
+  border: none;
+}
   </style>
 
   <!-- script thème déplacé juste avant </head> -->
@@ -585,6 +645,37 @@
 
       <p style="font-size:0.9rem; opacity:0.9; margin-top: 20px; margin-bottom: 0; color: #ffffff;">⚠️ Clé orange à saisir pendant l'inscription — Ne peut pas être ajouté après coup.</p>
     </div>
+
+    <h2 id="video-orange-key">
+  Tutoriel vidéo : comment entrer l’Orange Key Tangerine
+</h2>
+<p>
+  Cette courte vidéo montre l’écran d’inscription Tangerine et où saisir
+  le code Orange Key pour débloquer le bonus.
+</p>
+
+<div class="yt-lite" id="yt-ZjDvFV42qbM" 
+     role="button" tabindex="0"
+     aria-label="Play: Tangerine Referral Code 14130944S1">
+  <div class="play-btn"></div>
+</div>
+          <script>
+document.querySelectorAll('.yt-lite').forEach(el => {
+  const load = () => {
+    const id = el.id.replace('yt-', '');
+    const iframe = document.createElement('iframe');
+    iframe.src = `https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0&playsinline=1`;
+    iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+    iframe.allowFullscreen = true;
+    el.appendChild(iframe);
+    el.querySelector('.play-btn').style.display = 'none';
+  };
+  el.addEventListener('click', load);
+  el.addEventListener('keydown', e => e.key === 'Enter' && load());
+});
+</script>
+</div>
+
   </header>
 
   <main>
@@ -603,7 +694,7 @@
         </article>
 
         <p style="font-size:0.8rem; color:var(--muted); margin-bottom:16px;">
-        Mis à jour le <time datetime="2026-06-01">1er juin 2026</time>
+        Mis à jour le <time datetime="2026-06-02">2 juin 2026</time>
         </p>
 
         <section id="comment-utiliser">
@@ -659,7 +750,7 @@
             </li>
           </ol>
         </section>
-
+        
         <section id="experience-vecue">
           <span class="section-label">Retour d'expérience</span>
           <h2>Mon utilisation de la Clé Orange Tangerine</h2>
