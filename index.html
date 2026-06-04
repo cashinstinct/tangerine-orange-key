@@ -322,16 +322,19 @@
     .cumul-badge {
       display: inline-flex;
       align-items: center;
-      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
       background: rgba(255,255,255,.18);
       border: 1.5px solid rgba(255,255,255,.45);
       border-radius: 40px;
-      padding: 10px 22px;
-      font-size: 1rem;
+      padding: 10px 18px;
+      font-size: 0.95rem;
       font-weight: 800;
       color: #fff;
       margin-bottom: 28px;
       backdrop-filter: blur(4px);
+      max-width: 100%;
     }
     .cumul-badge .plus { opacity: .7; font-size: .85em; }
     .cumul-badge .total-pill {
@@ -429,7 +432,8 @@
     code { font-family: "Courier New", Courier, monospace; background: var(--surface-soft); color: var(--accent-dark); padding: 2px 8px; border-radius: 4px; font-size: 0.97em; font-weight: 700; border: 1px solid var(--border); }
 
     .seo-table-wrap { overflow-x: auto; margin: 16px 0; border-radius: 8px; border: 1px solid var(--border); }
-    .seo-table { width: 100%; border-collapse: collapse; font-size: 0.95rem; background: var(--surface); text-align: left; }
+    .seo-table { width: 100%; border-collapse: collapse; font-size: 0.88rem; background: var(--surface); text-align: left; }
+    @media (max-width: 640px) { .seo-table th, .seo-table td { padding: 8px 10px; font-size: 0.82rem; } }
     .seo-table th, .seo-table td { border-bottom: 1px solid var(--border); padding: 12px 16px; }
     .seo-table th { background: var(--surface-muted); color: var(--text); font-weight: 700; }
     .seo-table tr:last-child th, .seo-table tr:last-child td { border-bottom: none; }
@@ -552,11 +556,11 @@
   <div class="container">
     <div style="display:flex;justify-content:center;margin-bottom:28px;">
       <div class="cumul-badge">
-        <span>🍊 50 $</span>
+        <span style="white-space:nowrap;">🍊&nbsp;50&nbsp;$</span>
         <span class="plus">+</span>
-        <span>💰 250 $</span>
+        <span style="white-space:nowrap;">💰&nbsp;250&nbsp;$</span>
         <span class="plus">=</span>
-        <span class="total-pill">⭐ 300 $ max</span>
+        <span class="total-pill" style="white-space:nowrap;">⭐&nbsp;300&nbsp;$ max</span>
       </div>
     </div>
     <h1>Clé Orange Tangerine 14130944S1 — jusqu'à 300 $ de prime en 2026</h1>
@@ -571,7 +575,7 @@
           <input type="text" value="14130944S1" readonly aria-readonly="true" aria-label="Clé Orange Tangerine"
             style="flex: 1; border: none; padding: 12px 16px; font-family: monospace; font-size: 1.1rem; font-weight: 700; color: var(--text); background: transparent; text-align: center;" />
           <button class="copy-btn" data-copy="14130944S1" data-target="copyStatusHero" type="button"
-            style="-webkit-appearance: none;">Copier la clé</button>
+            style="-webkit-appearance: none; padding: 0 14px; font-size: 0.88rem;">Copier</button>
         </div>
         <span id="copyStatusHero" class="copy-status" role="status" aria-atomic="true" aria-live="polite"></span>
         <p style="font-size: 0.85rem; margin-top: 8px; text-align: center;">Copiez le code, puis inscrivez-vous sur Tangerine.</p>
@@ -684,25 +688,19 @@
               <tr>
                 <th>Prime</th>
                 <th>Montant</th>
-                <th>Code requis</th>
-                <th>Condition</th>
-                <th>Délai</th>
+                <th>Condition &amp; délai</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>Clé Orange</td>
+                <td>Clé Orange <code>14130944S1</code></td>
                 <td><strong>50 $</strong></td>
-                <td><code>14130944S1</code> à l'inscription</td>
-                <td>250 $ maintenu 60 jours</td>
-                <td>~3 mois</td>
+                <td>250 $ maintenu 60 jours → crédit ~3 mois</td>
               </tr>
               <tr>
-                <td>Dépôt de paie</td>
+                <td>Dépôt de paie (aucun code)</td>
                 <td><strong>250 $</strong></td>
-                <td>Aucun</td>
-                <td>≥ 200 $/mois × 2 mois consécutifs</td>
-                <td>~2–3 mois</td>
+                <td>≥&nbsp;200&nbsp;$/mois × 2 mois → versement automatique</td>
               </tr>
             </tbody>
           </table>
@@ -887,7 +885,7 @@
 
       <!-- === CTA === -->
       <div class="cta-section">
-        <h2>Prêt à ouvrir votre compte ?</h2>
+        <h2>Prêt à ouvrir votre&nbsp;compte&nbsp;?</h2>
         <p>Entrez la Clé Orange <strong>14130944S1</strong> à la première étape de votre inscription et recevez jusqu'à <strong>300 $ de prime</strong> en combinant les deux programmes.</p>
         <a class="btn" href="https://www.tangerine.ca/app/#/visitor-enroll/profile-setup?products=4000&locale=fr_CA&id=hp-banner" target="_blank" rel="noopener noreferrer">
           🍊 Ouvrir un compte Tangerine
