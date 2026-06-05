@@ -322,28 +322,28 @@
     .cumul-badge {
       display: inline-flex;
       align-items: center;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 8px;
-      background: rgba(255,255,255,.18);
-      border: 1.5px solid rgba(255,255,255,.45);
+      flex-wrap: nowrap;
+      gap: 6px;
+      background: rgba(0,0,0,.25);
+      border: 2px solid rgba(255,255,255,.6);
       border-radius: 40px;
-      padding: 10px 18px;
-      font-size: 0.95rem;
+      padding: 10px 20px;
+      font-size: 1rem;
       font-weight: 800;
       color: #fff;
       margin-bottom: 28px;
-      backdrop-filter: blur(4px);
       max-width: 100%;
+      white-space: nowrap;
     }
-    .cumul-badge .plus { opacity: .7; font-size: .85em; }
+    .cumul-badge .plus { opacity: .8; font-size: .9em; margin: 0 2px; }
     .cumul-badge .total-pill {
       background: #fff;
       color: var(--accent);
       border-radius: 20px;
-      padding: 3px 12px;
-      font-size: .9rem;
+      padding: 4px 14px;
+      font-size: .95rem;
       font-weight: 900;
+      white-space: nowrap;
     }
 
     /* ── CUMUL BOX + ROW ── */
@@ -382,7 +382,7 @@
       padding: 16px 12px;
     }
     .cumul-item .amount { font-size: 1.6rem; font-weight: 900; color: var(--accent); display: block; }
-    .cumul-item .label { font-size: .82rem; color: var(--text-soft); display: block; margin-top: 4px; }
+    .cumul-item .label { font-size: .95rem; color: var(--text-soft); display: block; margin-top: 6px; line-height: 1.5; }
     .cumul-total { border-color: #1a7a3c !important; }
     [data-theme="dark"] .cumul-total { border-color: #4ade80 !important; }
     .cumul-total .amount { color: #1a7a3c; }
@@ -546,7 +546,7 @@
       <a href="https://cashinstinct.github.io/code-client-ebox/">EBOX</a>
       <a href="https://cashinstinct.github.io/stickermule/fr/">Sticker&nbsp;Mule</a>
       <a class="active" href="https://cashinstinct.github.io/tangerine-orange-key/">Tangerine</a>
-      <a href="#english-summary" class="nav-en" aria-label="See this page in English">English&nbsp;↓</a>
+      <a href="#english-summary" class="nav-en" aria-label="See this page in English">English ↓</a>
       <button id="theme-toggle" class="theme-btn" type="button" aria-label="Activer le mode sombre" aria-pressed="false">🌙</button>
     </div>
   </div>
@@ -563,8 +563,8 @@
         <span class="total-pill" style="white-space:nowrap;">⭐&nbsp;300&nbsp;$ max</span>
       </div>
     </div>
-    <h1>Clé Orange Tangerine 14130944S1 — jusqu'à 300 $ de prime en 2026</h1>
-    <p>Combinez la <strong>Clé Orange 14130944S1</strong> (50 $ à l'inscription) et la <strong>prime de dépôt de paie</strong> (250 $) pour maximiser votre bonus de bienvenue. Sans frais, sans contrat.</p>
+    <h1>Clé Orange Tangerine 14130944S1 — jusqu'à 300&nbsp;$ de prime en 2026</h1>
+    <p>Combinez la <strong>Clé Orange 14130944S1</strong> (50&nbsp;$ à l'inscription) et la <strong>prime de dépôt de paie</strong> (250&nbsp;$) pour maximiser votre bonus de bienvenue. Sans frais, sans contrat.</p>
 
     <div class="hero-methods">
       <div style="background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 24px 20px; box-shadow: var(--shadow);">
@@ -575,7 +575,7 @@
           <input type="text" value="14130944S1" readonly aria-readonly="true" aria-label="Clé Orange Tangerine"
             style="flex: 1; border: none; padding: 12px 16px; font-family: monospace; font-size: 1.1rem; font-weight: 700; color: var(--text); background: transparent; text-align: center;" />
           <button class="copy-btn" data-copy="14130944S1" data-target="copyStatusHero" type="button"
-            style="-webkit-appearance: none; padding: 0 14px; font-size: 0.88rem;">Copier</button>
+            style="-webkit-appearance: none; padding: 0 20px; font-size: 1rem; min-height: 48px;">Copier</button>
         </div>
         <span id="copyStatusHero" class="copy-status" role="status" aria-atomic="true" aria-live="polite"></span>
         <p style="font-size: 0.85rem; margin-top: 8px; text-align: center;">Copiez le code, puis inscrivez-vous sur Tangerine.</p>
@@ -613,7 +613,7 @@
       </nav>
 
       <div class="ai-summary">
-        La <strong>Clé Orange Tangerine active en 2026</strong> est <strong>14130944S1</strong>. Elle donne <strong>50 $ à l'inscription</strong> (dépôt de 250 $ maintenu 60 jours). En parallèle, la <strong>prime de dépôt de paie de 250 $</strong> s'active sans code additionnel — les deux programmes sont <strong>cumulables pour un total de 300 $</strong>.
+        La <strong>Clé Orange Tangerine active en 2026</strong> est <strong>14130944S1</strong>. Elle donne <strong>50&nbsp;$ à l'inscription</strong> (dépôt de 250&nbsp;$ maintenu 60 jours). En parallèle, la <strong>prime de dépôt de paie de 250&nbsp;$</strong> s'active sans code additionnel — les deux programmes sont <strong>cumulables pour un total de 300&nbsp;$</strong>.
         <br><br>
         🔑 La Clé Orange doit être saisie dans le champ <em>« Entrez une Clé Orange »</em> à la <strong>première étape</strong> du formulaire d'inscription — pas à l'étape paiement, pas après la création du compte.
       </div>
@@ -625,7 +625,7 @@
       <!-- === SECTION CUMUL === -->
       <section id="cumul" aria-label="Deux primes cumulables">
         <span class="section-label">💰 Maximiser la prime</span>
-        <h2>50 $ + 250 $ — comment cumuler les deux primes Tangerine</h2>
+        <h2>50&nbsp;$ + 250&nbsp;$ — comment cumuler les deux primes Tangerine</h2>
 
         <div class="cumul-box">
           <h3>
@@ -634,22 +634,22 @@
           </h3>
           <div class="cumul-row">
             <div class="cumul-item">
-              <span class="amount">50 $</span>
+              <span class="amount">50&nbsp;$</span>
               <span class="label">Prime Clé Orange<br><strong>Code 14130944S1</strong><br>à l'inscription</span>
             </div>
             <span class="cumul-sep" aria-hidden="true">+</span>
             <div class="cumul-item">
-              <span class="amount">250 $</span>
+              <span class="amount">250&nbsp;$</span>
               <span class="label">Prime dépôt de paie<br><strong>Aucun code requis</strong><br>via dépôt direct</span>
             </div>
             <span class="cumul-sep" aria-hidden="true">=</span>
             <div class="cumul-item cumul-total">
-              <span class="amount">300 $</span>
+              <span class="amount">300&nbsp;$</span>
               <span class="label">Total maximum<br>cumulé</span>
             </div>
           </div>
           <p class="cumul-note">
-            💡 <strong>Pourquoi les deux sont cumulables :</strong> la prime de 250 $ s'active par votre comportement bancaire (dépôt de paie direct), sans passer par le champ Clé Orange — qui reste libre pour <code>14130944S1</code> à l'inscription. Deux mécanismes distincts côté système Tangerine.
+            💡 <strong>Pourquoi les deux sont cumulables :</strong> la prime de 250&nbsp;$ s'active par votre comportement bancaire (dépôt de paie direct), sans passer par le champ Clé Orange — qui reste libre pour <code>14130944S1</code> à l'inscription. Deux mécanismes distincts côté système Tangerine.
           </p>
         </div>
 
@@ -664,20 +664,20 @@
           </li>
           <li>
             <div>
-              <h3>Déposer 250 $ dans les 30 jours</h3>
-              <p>Effectuer un virement de 250 $ et maintenir ce solde pendant <strong>60 jours consécutifs</strong>. Tangerine crédite les 50 $ dans les 30 jours suivants.</p>
+              <h3>Déposer 250&nbsp;$ dans les 30 jours</h3>
+              <p>Effectuer un virement de 250&nbsp;$ et maintenir ce solde pendant <strong>60 jours consécutifs</strong>. Tangerine crédite les 50&nbsp;$ dans les 30 jours suivants.</p>
             </div>
           </li>
           <li>
             <div>
-              <h3>Rediriger votre dépôt de paie (≥ 200 $/mois)</h3>
+              <h3>Rediriger votre dépôt de paie (≥ 200&nbsp;$/mois)</h3>
               <p>Donner à votre employeur les coordonnées Tangerine : institution <strong>614</strong>, transit <strong>00152</strong>. Le premier dépôt doit arriver dans les 60 jours suivant l'ouverture.</p>
             </div>
           </li>
           <li>
             <div>
               <h3>Maintenir deux dépôts de paie consécutifs</h3>
-              <p>Après deux mois de dépôts directs, Tangerine verse automatiquement les <strong>250 $</strong> le mois suivant.</p>
+              <p>Après deux mois de dépôts directs, Tangerine verse automatiquement les <strong>250&nbsp;$</strong> le mois suivant.</p>
             </div>
           </li>
         </ol>
@@ -694,12 +694,12 @@
             <tbody>
               <tr>
                 <td>Clé Orange <code>14130944S1</code></td>
-                <td><strong>50 $</strong></td>
-                <td>250 $ maintenu 60 jours → crédit ~3 mois</td>
+                <td><strong>50&nbsp;$</strong></td>
+                <td>250&nbsp;$ maintenu 60 jours → crédit ~3 mois</td>
               </tr>
               <tr>
                 <td>Dépôt de paie (aucun code)</td>
-                <td><strong>250 $</strong></td>
+                <td><strong>250&nbsp;$</strong></td>
                 <td>≥&nbsp;200&nbsp;$/mois × 2 mois → versement automatique</td>
               </tr>
             </tbody>
@@ -743,13 +743,13 @@
           <li>
             <div>
               <h3>Complétez votre profil et vérifiez le résumé</h3>
-              <p>Assurez-vous que la prime de 50 $ apparaît dans le récapitulatif avant de confirmer la demande.</p>
+              <p>Assurez-vous que la prime de 50&nbsp;$ apparaît dans le récapitulatif avant de confirmer la demande.</p>
             </div>
           </li>
           <li>
             <div>
-              <h3>Déposez 250 $ dans les 30 premiers jours</h3>
-              <p>Maintenez ce solde pendant <strong>60 jours consécutifs</strong>. La prime de 50 $ est créditée dans les 30 jours suivants.</p>
+              <h3>Déposez 250&nbsp;$ dans les 30 premiers jours</h3>
+              <p>Maintenez ce solde pendant <strong>60 jours consécutifs</strong>. La prime de 50&nbsp;$ est créditée dans les 30 jours suivants.</p>
             </div>
           </li>
         </ol>
@@ -781,11 +781,11 @@
         <div class="facts">
           <div class="fact">
             <strong>Prime totale possible</strong>
-            <span>Jusqu'à 300 $ (50 $ + 250 $) — programmes cumulables.</span>
+            <span>Jusqu'à 300&nbsp;$ (50&nbsp;$ + 250&nbsp;$) — programmes cumulables.</span>
           </div>
           <div class="fact">
             <strong>Sans frais mensuels</strong>
-            <span>Compte-chèques et épargne à 0 $/mois, transactions illimitées.</span>
+            <span>Compte-chèques et épargne à 0&nbsp;$/mois, transactions illimitées.</span>
           </div>
           <div class="fact">
             <strong>Interac gratuit</strong>
@@ -797,7 +797,7 @@
           </div>
           <div class="fact">
             <strong>Codes bancaires (dépôt de paie)</strong>
-            <span>Institution : <strong>614</strong> — Transit : <strong>00152</strong></span>
+            <span style="white-space:nowrap;">Institution&nbsp;: <strong>614</strong> &nbsp;·&nbsp; Transit&nbsp;: <strong>00152</strong></span>
           </div>
           <div class="fact">
             <strong>Disponibilité</strong>
@@ -812,7 +812,7 @@
         <h2>Mon avis sur Tangerine</h2>
         <div class="review-box">
           <div class="trust-badge">✓ Testé et vérifié par Cash Instinct — juin 2026</div>
-          <p>J'utilise Tangerine comme compte principal depuis plusieurs années. Le versement des 50 $ s'est fait automatiquement, sans aucune démarche supplémentaire, une fois les 60 jours de solde maintenu écoulés.</p>
+          <p>J'utilise Tangerine comme compte principal depuis plusieurs années. Le versement des 50&nbsp;$ s'est fait automatiquement, sans aucune démarche supplémentaire, une fois les 60 jours de solde maintenu écoulés.</p>
           <p>Ce que j'apprécie :</p>
           <ul>
             <li><strong>Zéro frais :</strong> aucun frais mensuel, aucun frais de transaction, Interac gratuit et illimité.</li>
@@ -821,7 +821,7 @@
             <li><strong>Stabilité :</strong> filiale de la Banque Scotia — aucun problème de fiabilité observé.</li>
           </ul>
           <p style="margin-top: 20px; font-size: 0.95rem; border-top: 1px dashed var(--border); padding-top: 15px;">
-            💡 Vous optimisez vos dépenses ? Consultez aussi mes guides pour <a href="https://cashinstinct.github.io/code-client-ebox/">EBOX</a> (jusqu'à 125 $ de rabais internet) et <a href="https://cashinstinct.github.io/stickermule/fr/">Sticker&nbsp;Mule</a>.
+            💡 Vous optimisez vos dépenses ? Consultez aussi mes guides pour <a href="https://cashinstinct.github.io/code-client-ebox/">EBOX</a> (jusqu'à 125&nbsp;$ de rabais internet) et <a href="https://cashinstinct.github.io/stickermule/fr/">Sticker&nbsp;Mule</a>.
           </p>
         </div>
       </section>
@@ -839,9 +839,9 @@
         <h2>Foire aux questions</h2>
         <div class="faq">
           <details>
-            <summary>La Clé Orange 14130944S1 est-elle cumulable avec la prime de 250 $ ?</summary>
+            <summary>La Clé Orange 14130944S1 est-elle cumulable avec la prime de 250&nbsp;$ ?</summary>
             <div class="faq-body">
-              <p>Oui. Les deux primes sont indépendantes et cumulables. La Clé Orange est une prime d'acquisition activée par le code <code>14130944S1</code> à l'inscription. La prime de 250 $ est une prime de comportement bancaire activée par le dépôt de paie — aucun code n'est requis pour cette dernière.</p>
+              <p>Oui. Les deux primes sont indépendantes et cumulables. La Clé Orange est une prime d'acquisition activée par le code <code>14130944S1</code> à l'inscription. La prime de 250&nbsp;$ est une prime de comportement bancaire activée par le dépôt de paie — aucun code n'est requis pour cette dernière.</p>
             </div>
           </details>
           <details>
@@ -851,15 +851,15 @@
             </div>
           </details>
           <details>
-            <summary>Combien de temps pour recevoir la prime de 50 $ ?</summary>
+            <summary>Combien de temps pour recevoir la prime de 50&nbsp;$ ?</summary>
             <div class="faq-body">
-              <p>Environ 3 mois au total : 30 jours pour effectuer le dépôt initial, 60 jours de maintien du solde à 250 $, puis 30 jours pour que Tangerine crédite la prime. Le versement est automatique — aucune démarche requise.</p>
+              <p>Environ 3 mois au total : 30 jours pour effectuer le dépôt initial, 60 jours de maintien du solde à 250&nbsp;$, puis 30 jours pour que Tangerine crédite la prime. Le versement est automatique — aucune démarche requise.</p>
             </div>
           </details>
           <details>
-            <summary>Comment activer la prime de dépôt de paie de 250 $ ?</summary>
+            <summary>Comment activer la prime de dépôt de paie de 250&nbsp;$ ?</summary>
             <div class="faq-body">
-              <p>Aucun code requis. Après avoir ouvert votre compte avec la Clé Orange, redirigez votre dépôt de paie direct vers Tangerine (institution <strong>614</strong>, transit <strong>00152</strong>, minimum 200 $/mois). Le premier dépôt doit arriver dans les 60 jours suivant l'ouverture. Après deux dépôts consécutifs, Tangerine verse les 250 $ automatiquement le mois suivant.</p>
+              <p>Aucun code requis. Après avoir ouvert votre compte avec la Clé Orange, redirigez votre dépôt de paie direct vers Tangerine (institution <strong>614</strong>, transit <strong>00152</strong>, minimum 200&nbsp;$/mois). Le premier dépôt doit arriver dans les 60 jours suivant l'ouverture. Après deux dépôts consécutifs, Tangerine verse les 250&nbsp;$ automatiquement le mois suivant.</p>
             </div>
           </details>
           <details>
@@ -877,7 +877,7 @@
           <details>
             <summary>Qu'est-ce qu'une Clé Orange Tangerine (ou Cle Orange) ?</summary>
             <div class="faq-body">
-              <p>La « Clé Orange » (parfois orthographiée « Cle Orange » sans accent) est le terme officiel de Tangerine pour son code de parrainage. Entrer <code>14130944S1</code> dans le champ prévu active la prime de bienvenue de 50 $. C'est l'équivalent d'un code promo chez d'autres banques, mais spécifique au système de parrainage Tangerine.</p>
+              <p>La « Clé Orange » (parfois orthographiée « Cle Orange » sans accent) est le terme officiel de Tangerine pour son code de parrainage. Entrer <code>14130944S1</code> dans le champ prévu active la prime de bienvenue de 50&nbsp;$. C'est l'équivalent d'un code promo chez d'autres banques, mais spécifique au système de parrainage Tangerine.</p>
             </div>
           </details>
         </div>
@@ -886,7 +886,7 @@
       <!-- === CTA === -->
       <div class="cta-section">
         <h2>Prêt à ouvrir votre&nbsp;compte&nbsp;?</h2>
-        <p>Entrez la Clé Orange <strong>14130944S1</strong> à la première étape de votre inscription et recevez jusqu'à <strong>300 $ de prime</strong> en combinant les deux programmes.</p>
+        <p>Entrez la Clé Orange <strong>14130944S1</strong> à la première étape de votre inscription et recevez jusqu'à <strong>300&nbsp;$ de prime</strong> en combinant les deux programmes.</p>
         <a class="btn" href="https://www.tangerine.ca/app/#/visitor-enroll/profile-setup?products=4000&locale=fr_CA&id=hp-banner" target="_blank" rel="noopener noreferrer">
           🍊 Ouvrir un compte Tangerine
         </a>
@@ -898,7 +898,7 @@
       </div>
 
       <div class="transparency">
-        <strong>Transparence :</strong> si vous ouvrez un compte Tangerine avec la Clé Orange <code>14130944S1</code>, je reçois également une prime de parrainage de 50 $ de la part de Tangerine. Votre prime de 50 $ est indépendante et entièrement financée par Tangerine.
+        <strong>Transparence :</strong> si vous ouvrez un compte Tangerine avec la Clé Orange <code>14130944S1</code>, je reçois également une prime de parrainage de 50&nbsp;$ de la part de Tangerine. Votre prime de 50&nbsp;$ est indépendante et entièrement financée par Tangerine.
       </div>
 
     </div>
