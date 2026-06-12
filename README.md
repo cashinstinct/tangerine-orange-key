@@ -103,4 +103,4 @@ R : Environ 3 mois après l'inscription — 60 jours de solde maintenu, puis la 
 
 ---
 
-*Dernière mise à jour : mai 2026*
+*Dernière mise à jour : juin 2026*
